@@ -1,0 +1,56 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+a {
+  text-decoration: none;
+}
+header {
+  .bgImage {
+    img {
+      position: absolute;
+      display: flex;
+      margin: 0% auto;
+      padding: 0%;
+      z-index: 1;
+      width: 100%;
+    }
+  }
+  ul {
+    margin: 4% 0% 0 30%;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      &:hover {
+        color: black;
+      }
+    }
+    li {
+      display: inline-block;
+      margin: auto;
+      padding: 3% 7%;
+      box-sizing: border-box;
+      background-color: black;
+      font-family: "Gentium Book Basic", serif;
+      font-size: 2em;
+      transition: 0.3s;
+      &:hover {
+        background-color: rgb(0, 132, 255);
+      }
+    }
+    .here {
+      a {
+        color: black;
+      }
+      background-color: rgb(190, 0, 190);
+      &:hover {
+        background-color: rgb(0, 132, 255);
+      }
+    }
+  }
+}
