@@ -76,13 +76,13 @@ header ul .here:hover {
   background-color: rgba(0, 0, 0, 0.778);
   margin: 15% 2% 0 2%;
   padding: 7% 0% 7% 5%;
-  z-index: 3;
+  z-index: 4;
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.charaBox .shotaro img {
+.charaBox #shotaro img {
   width: 79%;
   margin: 0%;
   padding: 0%;
@@ -90,44 +90,49 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-.charaBox .minato img {
+.charaBox #minato img {
   display: inline-block;
   width: 79%;
   margin: 0%;
   padding: 0%;
+  cursor: pointer;
 }
 
-.charaBox .yomi {
+.charaBox #yomi {
   margin: 0% 0 0 8%;
   padding: 0%;
 }
 
-.charaBox .yomi img {
+.charaBox #yomi img {
   display: inline-block;
   width: 68%;
   margin: 0% 0 0 0;
   padding: 0%;
+  cursor: pointer;
 }
 
-.charaBox .juro img {
+.charaBox #juro img {
   width: 154%;
   margin: 0;
   padding: 0%;
   display: inline-block;
+  cursor: pointer;
 }
 
-.charaBox .shiro img {
+.charaBox #shiro img {
   width: 77.5%;
   margin: 0%;
   padding: 0%;
   display: inline-block;
+  cursor: pointer;
 }
 
-.charaBox .shiodome img {
+.charaBox #shiodome img {
   width: 81.5%;
   margin: 0%;
   padding: 0%;
   display: inline-block;
+  cursor: pointer;
 }
 
 .hidden #shotaroExp {
@@ -138,18 +143,18 @@ header ul .here:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  z-index: 2;
+  z-index: 3;
   background-color: rgba(0, 0, 0, 0.778);
   opacity: 0;
   -webkit-transition: .5s;
   transition: .5s;
   width: 70%;
   margin: 15% 3% 0 10%;
-  padding: 5%;
+  padding: 3% 5%;
 }
 
 .hidden #shotaroExp img {
-  width: 23%;
+  width: 26%;
 }
 
 .hidden #shotaroExp .box {
@@ -177,7 +182,106 @@ header ul .here:hover {
   width: 20%;
   margin: 15% 0 0 30%;
   padding: 0%;
-  z-index: 5;
+  cursor: pointer;
+}
+
+.hidden #minatoExp {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.778);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 70%;
+  margin: 15% 3% 0 10%;
+  padding: 3% 5%;
+}
+
+.hidden #minatoExp img {
+  width: 33%;
+}
+
+.hidden #minatoExp .box {
+  display: block;
+}
+
+.hidden #minatoExp .box h3 {
+  color: white;
+  font-size: 1.7em;
+  font-family: "Gentium Book Basic", serif;
+}
+
+.hidden #minatoExp .box h3 span {
+  font-family: "New Tegomin", serif;
+  font-size: 1.3em;
+}
+
+.hidden #minatoExp .box p {
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-size: 1em;
+}
+
+.hidden #minatoExp .box img {
+  width: 20%;
+  margin: 15% 0 0 30%;
+  padding: 0%;
+  cursor: pointer;
+}
+
+.hidden #shiodomeExp {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.778);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 70%;
+  margin: 15% 3% 0 10%;
+  padding: 3% 5%;
+}
+
+.hidden #shiodomeExp img {
+  width: 30%;
+}
+
+.hidden #shiodomeExp .box {
+  display: block;
+}
+
+.hidden #shiodomeExp .box h3 {
+  color: white;
+  font-size: 1.7em;
+  font-family: "Gentium Book Basic", serif;
+}
+
+.hidden #shiodomeExp .box h3 span {
+  font-family: "New Tegomin", serif;
+  font-size: 1.3em;
+}
+
+.hidden #shiodomeExp .box p {
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-size: 1em;
+}
+
+.hidden #shiodomeExp .box img {
+  width: 20%;
+  margin: 15% 0 0 30%;
+  padding: 0%;
   cursor: pointer;
 }
 /*# sourceMappingURL=chara.css.map */
