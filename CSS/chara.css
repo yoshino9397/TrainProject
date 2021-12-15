@@ -284,4 +284,154 @@ header ul .here:hover {
   padding: 0%;
   cursor: pointer;
 }
+
+.hidden #shiroExp {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.778);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 70%;
+  margin: 15% 3% 0 10%;
+  padding: 3% 5%;
+}
+
+.hidden #shiroExp img {
+  width: 25%;
+}
+
+.hidden #shiroExp .box {
+  display: block;
+}
+
+.hidden #shiroExp .box h3 {
+  color: white;
+  font-size: 1.7em;
+  font-family: "Gentium Book Basic", serif;
+}
+
+.hidden #shiroExp .box h3 span {
+  font-family: "New Tegomin", serif;
+  font-size: 1.3em;
+}
+
+.hidden #shiroExp .box p {
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-size: 1em;
+}
+
+.hidden #shiroExp .box img {
+  width: 20%;
+  margin: 15% 0 0 30%;
+  padding: 0%;
+  cursor: pointer;
+}
+
+.hidden #juroExp {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.778);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 70%;
+  margin: 15% 3% 0 10%;
+  padding: 3% 5%;
+}
+
+.hidden #juroExp img {
+  width: 33%;
+}
+
+.hidden #juroExp .box {
+  display: block;
+}
+
+.hidden #juroExp .box h3 {
+  color: white;
+  font-size: 1.7em;
+  font-family: "Gentium Book Basic", serif;
+}
+
+.hidden #juroExp .box h3 span {
+  font-family: "New Tegomin", serif;
+  font-size: 1.3em;
+}
+
+.hidden #juroExp .box p {
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-size: 1em;
+}
+
+.hidden #juroExp .box img {
+  width: 20%;
+  margin: 15% 0 0 30%;
+  padding: 0%;
+  cursor: pointer;
+}
+
+.hidden #yomiExp {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.778);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 70%;
+  margin: 15% 3% 0 10%;
+  padding: 3% 5%;
+}
+
+.hidden #yomiExp img {
+  width: 28%;
+}
+
+.hidden #yomiExp .box {
+  display: block;
+}
+
+.hidden #yomiExp .box h3 {
+  color: white;
+  font-size: 1.7em;
+  font-family: "Gentium Book Basic", serif;
+}
+
+.hidden #yomiExp .box h3 span {
+  font-family: "New Tegomin", serif;
+  font-size: 1.3em;
+}
+
+.hidden #yomiExp .box p {
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-size: 1em;
+}
+
+.hidden #yomiExp .box img {
+  width: 20%;
+  margin: 15% 0 0 30%;
+  padding: 0%;
+  cursor: pointer;
+}
 /*# sourceMappingURL=chara.css.map */

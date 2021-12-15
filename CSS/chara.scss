@@ -236,4 +236,118 @@ header {
       }
     }
   }
+  #shiroExp {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.778);
+    opacity: 0;
+    transition: .5s;
+    width: 70%;
+    margin: 15% 3% 0 10%;
+    padding: 3% 5%;
+    img {
+      width: 25%;
+    }
+    .box {
+      display: block;
+      h3 {
+        color: white;
+        font-size: 1.7em;
+        font-family: "Gentium Book Basic", serif;
+        span {
+          font-family: "New Tegomin", serif;
+          font-size: 1.3em;
+        }
+      }
+      p{
+        color: white;
+        font-family: "New Tegomin", serif;
+        font-size: 1em;
+      }
+      img{
+        width: 20%;
+        margin: 15% 0 0 30%;
+        padding: 0%;
+        cursor: pointer;
+      }
+    }
+  }
+  #juroExp {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.778);
+    opacity: 0;
+    transition: .5s;
+    width: 70%;
+    margin: 15% 3% 0 10%;
+    padding: 3% 5%;
+    img {
+      width: 33%;
+    }
+    .box {
+      display: block;
+      h3 {
+        color: white;
+        font-size: 1.7em;
+        font-family: "Gentium Book Basic", serif;
+        span {
+          font-family: "New Tegomin", serif;
+          font-size: 1.3em;
+        }
+      }
+      p{
+        color: white;
+        font-family: "New Tegomin", serif;
+        font-size: 1em;
+      }
+      img{
+        width: 20%;
+        margin: 15% 0 0 30%;
+        padding: 0%;
+        cursor: pointer;
+      }
+    }
+  }
+  #yomiExp {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.778);
+    opacity: 0;
+    transition: .5s;
+    width: 70%;
+    margin: 15% 3% 0 10%;
+    padding: 3% 5%;
+    img {
+      width: 28%;
+    }
+    .box {
+      display: block;
+      h3 {
+        color: white;
+        font-size: 1.7em;
+        font-family: "Gentium Book Basic", serif;
+        span {
+          font-family: "New Tegomin", serif;
+          font-size: 1.3em;
+        }
+      }
+      p{
+        color: white;
+        font-family: "New Tegomin", serif;
+        font-size: 1em;
+      }
+      img{
+        width: 20%;
+        margin: 15% 0 0 30%;
+        padding: 0%;
+        cursor: pointer;
+      }
+    }
+  }
 }
