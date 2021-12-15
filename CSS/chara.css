@@ -69,10 +69,115 @@ header ul .here:hover {
 }
 
 .charaBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  display: block;
   background-color: rgba(0, 0, 0, 0.778);
+  margin: 15% 2% 0 2%;
+  padding: 7% 0% 7% 5%;
+  z-index: 3;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.charaBox .shotaro img {
+  width: 79%;
   margin: 0%;
   padding: 0%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.charaBox .minato img {
+  display: inline-block;
+  width: 79%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.charaBox .yomi {
+  margin: 0% 0 0 8%;
+  padding: 0%;
+}
+
+.charaBox .yomi img {
+  display: inline-block;
+  width: 68%;
+  margin: 0% 0 0 0;
+  padding: 0%;
+}
+
+.charaBox .juro img {
+  width: 154%;
+  margin: 0;
+  padding: 0%;
+  display: inline-block;
+}
+
+.charaBox .shiro img {
+  width: 77.5%;
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+}
+
+.charaBox .shiodome img {
+  width: 81.5%;
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+}
+
+.hidden #shotaroExp {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.778);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 70%;
+  margin: 15% 3% 0 10%;
+  padding: 5%;
+}
+
+.hidden #shotaroExp img {
+  width: 23%;
+}
+
+.hidden #shotaroExp .box {
+  display: block;
+}
+
+.hidden #shotaroExp .box h3 {
+  color: white;
+  font-size: 1.7em;
+  font-family: "Gentium Book Basic", serif;
+}
+
+.hidden #shotaroExp .box h3 span {
+  font-family: "New Tegomin", serif;
+  font-size: 1.3em;
+}
+
+.hidden #shotaroExp .box p {
+  color: white;
+  font-family: "New Tegomin", serif;
+  font-size: 1em;
+}
+
+.hidden #shotaroExp .box img {
+  width: 20%;
+  margin: 15% 0 0 30%;
+  padding: 0%;
+  z-index: 5;
+  cursor: pointer;
 }
 /*# sourceMappingURL=chara.css.map */

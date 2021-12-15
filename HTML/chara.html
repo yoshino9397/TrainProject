@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <title>Character</title>
   </head>
   <body>
@@ -28,13 +32,44 @@
       </div>
     </header>
 
-    <div class="charaBox">
-      <div class="shotaro"></div>
-      <div class="minato"></div>
-      <div class="yomi"></div>
-      <div class="juro"></div>
-      <div class="shiro"></div>
-      <div class="shiodome"></div>
+    <div class="charaBox" id="box">
+      <div class="shotaro">
+        <img src="../Image/shotaroBlack.jpg" onclick="exp1()" />
+      </div>
+      <div class="minato">
+        <img src="../Image/minatoBlack.jpg" />
+      </div>
+      <div class="shiodome">
+        <img src="../Image/shiodomeBlack.jpg" />
+      </div>
+      <div class="shiro">
+        <img src="../Image/shiroBlack.jpg" />
+      </div>
+      <div class="juro">
+        <img src="../Image/juroBlack.jpg" />
+      </div>
+      <div class="yomi">
+        <img src="../Image/yomiBlack.jpg" />
+      </div>
     </div>
+    <div class="hidden">
+      <div id="shotaroExp">
+        <img src="../Image/shotaro.jpg" />
+        <div class="box">
+          <h3><span>正太郎</span>/Shotaro</h3>
+          <p>
+            幼なじみの水人を追って帝都にやってきたが<br />
+            結果が出せず下宿先から追い出されてしまい、現在は<br />
+            神保町一丁目にある古書店・梅鉢堂に住み込みで働いている。<br />
+            帝大合格を目指しているが、空想小説や映画にうつつを<br />
+            抜かし、さらには自作小説まで執筆している模様。<br />
+            作家ゆえか、ふと自分の世界に入り込む癖がある。
+          </p>
+          <img onclick="back1()" src="../Image/PinkYajirusi.png" />
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/chara.js"></script>
   </body>
 </html>
