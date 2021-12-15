@@ -28,6 +28,13 @@ img {
           clip-path: polygon(0 0, 56.5% 0, 74.2% 100%, 0% 100%);
 }
 
+@media screen and (max-width: 600px) {
+  .bg {
+    width: 100%;
+    margin-top: 35%;
+  }
+}
+
 h1 {
   font-family: "New Tegomin", serif;
   text-align: right;
@@ -40,6 +47,14 @@ h1 {
   text-shadow: 2px 4px #be009f;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+    margin: -100% 0 0 20%;
+    position: absolute;
+  }
+}
+
 h3 {
   font-family: "Gentium Book Basic", serif;
   text-align: right;
@@ -50,6 +65,14 @@ h3 {
   padding: 0%;
   position: relative;
   text-shadow: 2px 4px #be009f;
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 2.3em;
+    margin: -87% 0 0 50%;
+    position: absolute;
+  }
 }
 
 .mokuji1 {
@@ -69,6 +92,12 @@ h3 {
   margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .mokuji1 div {
+    display: inline-block;
+  }
+}
+
 .mokuji1 a {
   margin: 0%;
   padding: 0;
@@ -86,6 +115,13 @@ h3 {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 600px) {
+  .mokuji1 .story p {
+    font-size: 1.7em;
+    margin: -33% 0% 0 14%;
+  }
+}
+
 .mokuji1 .story p:hover {
   color: #e9001f;
 }
@@ -96,6 +132,14 @@ h3 {
   padding: 0%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+  .mokuji1 .story img {
+    width: 11%;
+    margin: -41% 0% 0 14%;
+    position: absolute;
+  }
 }
 
 .mokuji1 .chara p {
@@ -110,6 +154,13 @@ h3 {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 600px) {
+  .mokuji1 .chara p {
+    font-size: 1.5em;
+    margin: -19% 0% 0 10%;
+  }
+}
+
 .mokuji1 .chara p:hover {
   color: #06554e;
 }
@@ -120,6 +171,14 @@ h3 {
   padding: 0%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+  .mokuji1 .chara img {
+    width: 11%;
+    margin: -28% 0% 0 13%;
+    position: absolute;
+  }
 }
 
 .mokuji1 .cgs p {
@@ -135,6 +194,13 @@ h3 {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 600px) {
+  .mokuji1 .cgs p {
+    font-size: 1.9em;
+    margin: -6% 0% 0 13%;
+  }
+}
+
 .mokuji1 .cgs p:hover {
   color: white;
   font-weight: normal;
@@ -146,6 +212,14 @@ h3 {
   padding: 0%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+  .mokuji1 .cgs img {
+    width: 11%;
+    margin: -15% 0% 0 11%;
+    position: absolute;
+  }
 }
 
 .mokuji2 {
@@ -182,6 +256,13 @@ h3 {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 600px) {
+  .mokuji2 .support p {
+    font-size: 1.8em;
+    margin: 32% 0% 0 2.3%;
+  }
+}
+
 .mokuji2 .support p:hover {
   color: #177c25;
 }
@@ -194,16 +275,31 @@ h3 {
           transform: rotate(90deg);
 }
 
+@media screen and (max-width: 600px) {
+  .mokuji2 .support img {
+    width: 13%;
+    margin: 25% 0% 0 4%;
+    position: absolute;
+  }
+}
+
 .mokuji2 .special p {
   font-family: "Gentium Book Basic", serif;
   color: #0f3309;
   font-size: 2.3em;
-  margin: 0.7%  0 0 5%;
+  margin: 0.7% 0 0 5%;
   padding: 0%;
   position: absolute;
   z-index: 2;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+  .mokuji2 .special p {
+    font-size: 1.9em;
+    margin: 47% 0% 0 3%;
+  }
 }
 
 .mokuji2 .special p:hover {
@@ -216,5 +312,13 @@ h3 {
   padding: 0%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+  .mokuji2 .special img {
+    width: 13%;
+    margin: 40% 0% 0 4%;
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=home.css.map */

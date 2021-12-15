@@ -4,6 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
+$breakpoints: (
+  "sm": "screen and (max-width: 600px)",
+  "md": "screen and (max-width: 800px)",
+  "lg": "screen and (max-width: 1000px)",
+  "xl": "screen and (max-width: 1300px)",
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
 $writing-mode: vertical-rl;
 
 html {
@@ -23,6 +36,10 @@ img {
 .bg {
   width: 77%;
   clip-path: polygon(0 0, 56.5% 0, 74.2% 100%, 0% 100%);
+  @include mq("sm") {
+    width:100%;
+    margin-top: 35%;
+  }
 }
 
 h1 {
@@ -35,6 +52,12 @@ h1 {
   padding: 0%;
   position: relative;
   text-shadow: 2px 4px rgb(190, 0, 159);
+  @include mq("sm") {
+    font-size: 3em;
+    margin: -100% 0 0 20%;
+    position: absolute;
+    
+  }
 }
 h3 {
   font-family: "Gentium Book Basic", serif;
@@ -46,6 +69,11 @@ h3 {
   padding: 0%;
   position: relative;
   text-shadow: 2px 4px rgb(190, 0, 159);
+  @include mq("sm") {
+    font-size: 2.3em;
+    margin: -87% 0 0 50%;
+    position: absolute;
+  }
 }
 
 .mokuji1 {
@@ -56,21 +84,28 @@ h3 {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    @include mq("sm") {
+      display: inline-block;
+    }
   }
   a {
     margin: 0%;
     padding: 0;
   }
-  .story{
+  .story {
     p {
       font-family: "Gentium Book Basic", serif;
-      color:black;
+      color: black;
       font-size: 2.8em;
       margin: 4.7% 0 0 0;
       padding: 0%;
       position: absolute;
       z-index: 2;
       transition: 0.2s;
+      @include mq("sm") {
+        font-size: 1.7em;
+        margin: -33% 0% 0 14%;
+      }
       &:hover {
         color: rgb(233, 0, 31);
       }
@@ -80,6 +115,11 @@ h3 {
       margin: 0%;
       padding: 0%;
       transform: rotate(90deg);
+      @include mq("sm") {
+        width: 11%;
+        margin: -41% 0% 0 14%;
+        position: absolute;
+      }
     }
   }
 
@@ -88,11 +128,15 @@ h3 {
       font-family: "Gentium Book Basic", serif;
       color: rgb(153, 6, 6);
       font-size: 2.2em;
-      margin:-0.4% 0 0 -1.3%;
+      margin: -0.4% 0 0 -1.3%;
       padding: 0%;
       position: absolute;
       z-index: 2;
       transition: 0.2s;
+      @include mq("sm") {
+        font-size: 1.5em;
+        margin: -19% 0% 0 10%;
+      }
       &:hover {
         color: rgb(6, 85, 78);
       }
@@ -102,6 +146,11 @@ h3 {
       margin: -15% 0 0 0;
       padding: 0%;
       transform: rotate(90deg);
+      @include mq("sm") {
+        width: 11%;
+        margin: -28% 0% 0 13%;
+        position: absolute;
+      }
     }
   }
 
@@ -116,6 +165,10 @@ h3 {
       position: absolute;
       z-index: 2;
       transition: 0.2s;
+      @include mq("sm") {
+        font-size: 1.9em;
+        margin: -6% 0% 0 13%;
+      }
       &:hover {
         color: rgb(255, 255, 255);
         font-weight: normal;
@@ -126,10 +179,14 @@ h3 {
       margin: -15% 0 0 0;
       padding: 0%;
       transform: rotate(90deg);
+      @include mq("sm") {
+        width: 11%;
+        margin: -15% 0% 0 11%;
+        position: absolute;
+      }
     }
   }
 }
-
 
 .mokuji2 {
   margin: -24% 0% 0 73%;
@@ -154,6 +211,10 @@ h3 {
       position: absolute;
       z-index: 2;
       transition: 0.2s;
+      @include mq("sm") {
+        font-size: 1.8em;
+        margin: 32% 0% 0 2.3%;
+      }
       &:hover {
         color: rgb(23, 124, 37);
       }
@@ -163,6 +224,11 @@ h3 {
       margin: 0% 0% 0 20%;
       padding: 0%;
       transform: rotate(90deg);
+      @include mq("sm") {
+        width: 13%;
+        margin: 25% 0% 0 4%;
+        position: absolute;
+      }
     }
   }
 
@@ -171,11 +237,15 @@ h3 {
       font-family: "Gentium Book Basic", serif;
       color: rgb(15, 51, 9);
       font-size: 2.3em;
-      margin: 0.7%  0 0 5%;
+      margin: 0.7% 0 0 5%;
       padding: 0%;
       position: absolute;
       z-index: 2;
       transition: 0.2s;
+      @include mq("sm") {
+        font-size: 1.9em;
+        margin: 47% 0% 0 3%;
+      }
       &:hover {
         color: rgb(190, 0, 181);
       }
@@ -185,6 +255,11 @@ h3 {
       margin: -12% 0 0% 20%;
       padding: 0%;
       transform: rotate(90deg);
+      @include mq("sm") {
+        width: 13%;
+        margin: 40% 0% 0 4%;
+        position: absolute;
+      }
     }
   }
 }
