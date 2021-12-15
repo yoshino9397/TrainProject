@@ -1,0 +1,70 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .bgImage img {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0% auto;
+  padding: 0%;
+  z-index: 1;
+  width: 100%;
+}
+
+header ul {
+  margin: 4% 0% 0 30%;
+  padding: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+header ul a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header ul a:hover {
+  color: black;
+}
+
+header ul li {
+  display: inline-block;
+  margin: auto;
+  padding: 3% 7%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header ul li:hover {
+  background-color: #0084ff;
+}
+
+header ul .here {
+  background-color: #be00be;
+}
+
+header ul .here a {
+  color: black;
+}
+
+header ul .here:hover {
+  background-color: #0084ff;
+}
+/*# sourceMappingURL=chara.css.map */
