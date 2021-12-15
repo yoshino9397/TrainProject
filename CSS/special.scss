@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+
 body {
   margin: 0%;
   padding: 0%;
@@ -7,10 +9,18 @@ a {
 }
 header {
   .bgImage {
-    img {
+    .paper1 {
       position: absolute;
       display: flex;
       margin: 0% auto;
+      padding: 0%;
+      z-index: 1;
+      width: 100%;
+    }
+    .paper2 {
+      position: absolute;
+      display: flex;
+      margin: 50% auto 0 auto;
       padding: 0%;
       z-index: 1;
       width: 100%;
@@ -51,6 +61,98 @@ header {
       &:hover {
         background-color: rgb(0, 132, 255);
       }
+    }
+  }
+}
+.main {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin: 15% 0 0 14%;
+  padding: 0%;
+  width: 70%;
+  height: 147%;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: white;
+  a {
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+  }
+  li {
+    list-style: none;
+  }
+  .title h1 {
+    position: absolute;
+    font-family: "New Tegomin", serif;
+    text-align: right;
+    color: rgb(190, 0, 190);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 5% 0 10% 15%;
+    padding: 0%;
+  }
+  .detail {
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    color: white;
+    font-weight: bold;
+    margin: 18% 0 10% 10%;
+    padding: 0%;
+    h3 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 0%;
+      padding: 1% 0;
+    }
+  }
+  .sell{
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    color: white;
+    font-weight: bold;
+    margin: 50% 0 10% 10%;
+    padding: 0%;
+    h3 {
+      font-size: 1.6em;
+    }
+    p,ul{
+      font-size: 1.2em;
+      margin: 0%;
+      padding: 1% 0;
+    }
+  }
+  .omake{
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    margin: 50% 0 10% 60%;
+    padding: 0%;
+    p{
+    font-size: 1.4em;
+    }
+    h3{
+      font-size: 1.8em;
+      color: white;
+    }
+  }
+  .staff{
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    margin: 80% 0 10% 60%;
+    padding: 0%;
+    h1{
+      color: rgb(190, 0, 190);
+      font-size: 2em;
+      font-weight: bold;
+     margin: 0%;
+     padding: 0%;
+    }
+    h3{
+      font-size: 1.6em;
+    }
+    p{
+      font-size: 1.3em;
     }
   }
 }

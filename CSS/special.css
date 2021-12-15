@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 body {
   margin: 0%;
   padding: 0%;
@@ -7,12 +8,23 @@ a {
   text-decoration: none;
 }
 
-header .bgImage img {
+header .bgImage .paper1 {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0% auto;
+  padding: 0%;
+  z-index: 1;
+  width: 100%;
+}
+
+header .bgImage .paper2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50% auto 0 auto;
   padding: 0%;
   z-index: 1;
   width: 100%;
@@ -66,5 +78,114 @@ header ul .here a {
 
 header ul .here:hover {
   background-color: #0084ff;
+}
+
+.main {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin: 15% 0 0 14%;
+  padding: 0%;
+  width: 70%;
+  height: 147%;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: white;
+}
+
+.main a {
+  text-decoration: none;
+  color: #0084ff;
+}
+
+.main li {
+  list-style: none;
+}
+
+.main .title h1 {
+  position: absolute;
+  font-family: "New Tegomin", serif;
+  text-align: right;
+  color: #be00be;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 5% 0 10% 15%;
+  padding: 0%;
+}
+
+.main .detail {
+  position: absolute;
+  font-family: "Yuji Syuku", serif;
+  color: white;
+  font-weight: bold;
+  margin: 18% 0 10% 10%;
+  padding: 0%;
+}
+
+.main .detail h3 {
+  font-size: 1.5em;
+}
+
+.main .detail p {
+  font-size: 1.2em;
+  margin: 0%;
+  padding: 1% 0;
+}
+
+.main .sell {
+  position: absolute;
+  font-family: "Yuji Syuku", serif;
+  color: white;
+  font-weight: bold;
+  margin: 50% 0 10% 10%;
+  padding: 0%;
+}
+
+.main .sell h3 {
+  font-size: 1.6em;
+}
+
+.main .sell p, .main .sell ul {
+  font-size: 1.2em;
+  margin: 0%;
+  padding: 1% 0;
+}
+
+.main .omake {
+  position: absolute;
+  font-family: "Yuji Syuku", serif;
+  margin: 50% 0 10% 60%;
+  padding: 0%;
+}
+
+.main .omake p {
+  font-size: 1.4em;
+}
+
+.main .omake h3 {
+  font-size: 1.8em;
+  color: white;
+}
+
+.main .staff {
+  position: absolute;
+  font-family: "Yuji Syuku", serif;
+  margin: 80% 0 10% 60%;
+  padding: 0%;
+}
+
+.main .staff h1 {
+  color: #be00be;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+}
+
+.main .staff h3 {
+  font-size: 1.6em;
+}
+
+.main .staff p {
+  font-size: 1.3em;
 }
 /*# sourceMappingURL=special.css.map */
