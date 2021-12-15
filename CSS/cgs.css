@@ -194,7 +194,7 @@ header ul .here:hover {
 }
 
 .modal #close {
-  background-image: url(../IMAGE/modoru.png);
+  background-image: url(../Image/modoru.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 4.8%;
@@ -219,7 +219,7 @@ header ul .here:hover {
 }
 
 .modal #mae {
-  background-image: url(../IMAGE/galleryYajirushiMae.png);
+  background-image: url(../Image/galleryYajirushiMae.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 8%;
@@ -233,7 +233,7 @@ header ul .here:hover {
 }
 
 .modal #ushiro {
-  background-image: url(../IMAGE/galleryYajirushiUshiro.png);
+  background-image: url(../Image/galleryYajirushiUshiro.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 7%;
@@ -251,7 +251,7 @@ header ul .here:hover {
 }
 
 .modal5 #close {
-  background-image: url(../IMAGE/modoru.png);
+  background-image: url(../Image/modoru.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -276,7 +276,7 @@ header ul .here:hover {
 }
 
 .modal5 #mae {
-  background-image: url(../IMAGE/galleryYajirushiMae.png);
+  background-image: url(../Image/galleryYajirushiMae.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 8%;
@@ -290,7 +290,7 @@ header ul .here:hover {
 }
 
 .modal5 #ushiro {
-  background-image: url(../IMAGE/galleryYajirushiUshiro.png);
+  background-image: url(../Image/galleryYajirushiUshiro.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 8%;
