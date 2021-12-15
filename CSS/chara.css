@@ -67,4 +67,12 @@ header ul .here a {
 header ul .here:hover {
   background-color: #0084ff;
 }
+
+.charaBox {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.778);
+  margin: 0%;
+  padding: 0%;
+}
 /*# sourceMappingURL=chara.css.map */
