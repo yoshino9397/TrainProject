@@ -133,6 +133,8 @@ header ul .here:hover {
   height: 130%;
   text-align: center;
   opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -267,13 +269,15 @@ header ul .here:hover {
   display: block;
   position: absolute;
   z-index: 5;
-  margin: 11% 0 0 10%;
+  margin: 11% 0 0 19%;
   padding: 1% 5%;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 70%;
+  width: 60.5%;
   height: 130%;
   text-align: center;
   opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media screen and (max-width: 600px) {

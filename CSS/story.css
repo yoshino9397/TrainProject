@@ -133,6 +133,8 @@ header ul .here:hover {
   font-size: 1.1em;
   width: 53%;
   opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -171,6 +173,8 @@ header ul .here:hover {
   font-size: 1.3em;
   width: 53%;
   opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media screen and (max-width: 600px) {
