@@ -1,35 +1,38 @@
+$breakpoints: (
+  "sm": "screen and (max-width: 600px)",
+  "md": "screen and (max-width: 800px)",
+  "lg": "screen and (max-width: 1000px)",
+  "xl": "screen and (max-width: 1300px)",
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
 body {
   margin: 0%;
   padding: 0%;
+  background-image: url(../Image/paper.jpg);
+  @include mq("sm") {
+    background-repeat: repeat-y;
+  }
 }
 a {
   text-decoration: none;
 }
 header {
-  .bgImage {
-    .paper1 {
-      position: absolute;
-      display: flex;
-      margin: 0% auto;
-      padding: 0%;
-      z-index: 1;
-      width: 100%;
-    }
-    .paper2{
-      position: absolute;
-      display: flex;
-      margin: 50% auto 0 auto;
-      padding: 0%;
-      z-index: 1;
-      width: 100%;
-    }
-  }
   ul {
     margin: 4% 0% 0 30%;
     padding: 0;
     position: absolute;
     display: flex;
     z-index: 100;
+    @include mq("sm") {
+      display: block;
+      margin: 25% 0 0 0;
+      position: fixed;
+    }
     a {
       text-decoration: none;
       color: white;
@@ -47,6 +50,14 @@ header {
       font-family: "Gentium Book Basic", serif;
       font-size: 2em;
       transition: 0.3s;
+      @include mq("sm") {
+        width: 120%;
+        font-size: 1.8em;
+        display: block;
+        padding: 10% 5%;
+        margin: 0% 0 0 5%;
+        text-align: center;
+      }
       &:hover {
         background-color: rgb(0, 132, 255);
       }
@@ -72,6 +83,11 @@ header {
   width: 70%;
   height: 130%;
   text-align: center;
+  @include mq("sm") {
+    margin: 25% 0 0 30%;
+    width: 55%;
+    height: 140%;
+  }
   a {
     text-decoration: none;
     color: rgb(0, 162, 255);
@@ -81,14 +97,24 @@ header {
     margin: 0%;
     padding: 0%;
     font-family: "Yuji Syuku", serif;
+    @include mq("sm") {
+      margin-top: 10%;
+    }
     h2 {
       font-size: 1.5em;
       color: rgb(212, 14, 153);
+      @include mq("sm") {
+        font-size: 1.3em;
+      }
     }
     p {
       font-size: 1.2em;
       color: white;
       margin-bottom: 5%;
+      @include mq("sm") {
+        font-size: 1em;
+        margin-bottom: 15%;
+      }
     }
   }
   .box2 {
@@ -107,28 +133,43 @@ header {
       border-width: 0.3em;
       border-color: rgb(202, 74, 164);
       box-sizing: border-box;
-      box-shadow:1em
+      box-shadow: 1em;
+      @include mq("sm") {
+        width: 80%;
+        margin: 3% 0 0 10%;
+        border-width: 0.2em;
+      }
     }
-    #message{
+    #message {
       width: 50%;
       margin: 3% 0 5% 27%;
       padding: 5% 2%;
       border-width: 0.3em;
       border-color: rgb(202, 74, 164);
       box-sizing: border-box;
-      box-shadow:1em
+      box-shadow: 1em;
+      @include mq("sm") {
+        width: 80%;
+        margin: 3% 0 0 10%;
+        border-width: 0.2em;
+      }
     }
-    #submit{
+    #submit {
       margin: 0% 0 0 45%;
       padding: 1%;
       background-color: rgb(0, 162, 255);
       width: 13%;
-      border-radius:75rem;
+      border-radius: 75rem;
       box-sizing: border-box;
       cursor: pointer;
       color: white;
+      @include mq("sm") {
+        margin: 10% 0 0 34%;
+        padding: 2%;
+        width: 30%;
+      }
       &:hover {
-        color:black;
+        color: black;
         background-color: darkcyan;
       }
     }
