@@ -134,13 +134,13 @@ header ul .here:hover {
   height: 147%;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {
   #main {
-    margin: 25% 0 0 30%;
+    margin: 12% 0 0 30%;
     width: 65%;
     height: 270%;
     text-align: center;
@@ -227,6 +227,21 @@ header ul .here:hover {
   padding: 1% 0;
 }
 
+#main .pic img {
+  display: block;
+  position: absolute;
+  margin: 7% 0 0 63%;
+  padding: 0%;
+  width: 29%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  #main .pic img {
+    display: none;
+  }
+}
+
 #main .omake {
   position: absolute;
   font-family: "Yuji Syuku", serif;
@@ -291,13 +306,13 @@ header ul .here:hover {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {
   #en {
-    margin: 25% 0 0 30%;
+    margin: 12% 0 0 30%;
     width: 65%;
     height: 270%;
     text-align: center;
@@ -382,6 +397,32 @@ header ul .here:hover {
   font-size: 1.2em;
   margin: 0%;
   padding: 1% 0;
+}
+
+#en .pic img {
+  display: block;
+  position: absolute;
+  margin: 7% 0 0 65%;
+  padding: 0%;
+  width: 29%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  #en .pic img .pic img {
+    display: block;
+    position: absolute;
+    margin: 7% 0 0 63%;
+    padding: 0%;
+    width: 29%;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  #en .pic img .pic img {
+    display: none;
+  }
 }
 
 #en .omake {
