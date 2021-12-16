@@ -2,32 +2,17 @@
 body {
   margin: 0%;
   padding: 0%;
+  background-image: url(../Image/paper.jpg);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-repeat: repeat-y;
+  }
 }
 
 a {
   text-decoration: none;
-}
-
-header .bgImage .paper1 {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0% auto;
-  padding: 0%;
-  z-index: 1;
-  width: 100%;
-}
-
-header .bgImage .paper2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 50% auto 0 auto;
-  padding: 0%;
-  z-index: 1;
-  width: 100%;
 }
 
 header ul {
@@ -38,6 +23,14 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   z-index: 100;
+}
+
+@media screen and (max-width: 600px) {
+  header ul {
+    display: block;
+    margin: 25% 0 0 0;
+    position: fixed;
+  }
 }
 
 header ul a {
@@ -64,6 +57,17 @@ header ul li {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 600px) {
+  header ul li {
+    width: 120%;
+    font-size: 1.8em;
+    display: block;
+    padding: 10% 5%;
+    margin: 0% 0 0 5%;
+    text-align: center;
+  }
+}
+
 header ul li:hover {
   background-color: #0084ff;
 }
@@ -87,9 +91,17 @@ header ul .here:hover {
   margin: 15% 0 0 14%;
   padding: 0%;
   width: 70%;
-  height: 147%;
+  height: 270%;
   background-color: rgba(0, 0, 0, 0.781);
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 25% 0 0 30%;
+    width: 65%;
+    text-align: center;
+  }
 }
 
 .main a {
@@ -112,6 +124,13 @@ header ul .here:hover {
   padding: 0%;
 }
 
+@media screen and (max-width: 600px) {
+  .main .title h1 {
+    font-size: 2.2em;
+    margin: 10% 0 10% 20%;
+  }
+}
+
 .main .detail {
   position: absolute;
   font-family: "Yuji Syuku", serif;
@@ -119,6 +138,13 @@ header ul .here:hover {
   font-weight: bold;
   margin: 18% 0 10% 10%;
   padding: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  .main .detail {
+    margin: 45% 0 10% 18%;
+    width: 65%;
+  }
 }
 
 .main .detail h3 {
@@ -140,11 +166,19 @@ header ul .here:hover {
   padding: 0%;
 }
 
+@media screen and (max-width: 600px) {
+  .main .sell {
+    margin: 160% 0 10% 18%;
+    width: 65%;
+  }
+}
+
 .main .sell h3 {
   font-size: 1.6em;
 }
 
-.main .sell p, .main .sell ul {
+.main .sell p,
+.main .sell ul {
   font-size: 1.2em;
   margin: 0%;
   padding: 1% 0;
@@ -155,6 +189,13 @@ header ul .here:hover {
   font-family: "Yuji Syuku", serif;
   margin: 50% 0 10% 60%;
   padding: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  .main .omake {
+    margin: 320% 0 0 18%;
+    width: 65%;
+  }
 }
 
 .main .omake p {
@@ -171,6 +212,13 @@ header ul .here:hover {
   font-family: "Yuji Syuku", serif;
   margin: 80% 0 10% 60%;
   padding: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  .main .staff {
+    margin: 410% 0 0 18%;
+    width: 65%;
+  }
 }
 
 .main .staff h1 {

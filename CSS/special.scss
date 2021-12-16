@@ -1,37 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
+$breakpoints: (
+  "sm": "screen and (max-width: 600px)",
+  "md": "screen and (max-width: 800px)",
+  "lg": "screen and (max-width: 1000px)",
+  "xl": "screen and (max-width: 1300px)",
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
 body {
   margin: 0%;
   padding: 0%;
+  background-image: url(../Image/paper.jpg);
+  @include mq("sm") {
+    background-repeat: repeat-y;
+  }
 }
 a {
   text-decoration: none;
 }
 header {
-  .bgImage {
-    .paper1 {
-      position: absolute;
-      display: flex;
-      margin: 0% auto;
-      padding: 0%;
-      z-index: 1;
-      width: 100%;
-    }
-    .paper2 {
-      position: absolute;
-      display: flex;
-      margin: 50% auto 0 auto;
-      padding: 0%;
-      z-index: 1;
-      width: 100%;
-    }
-  }
   ul {
     margin: 4% 0% 0 30%;
     padding: 0;
     position: absolute;
     display: flex;
     z-index: 100;
+    @include mq("sm") {
+      display: block;
+      margin: 25% 0 0 0;
+      position: fixed;
+    }
     a {
       text-decoration: none;
       color: white;
@@ -49,6 +52,14 @@ header {
       font-family: "Gentium Book Basic", serif;
       font-size: 2em;
       transition: 0.3s;
+      @include mq("sm") {
+        width: 120%;
+        font-size: 1.8em;
+        display: block;
+        padding: 10% 5%;
+        margin: 0% 0 0 5%;
+        text-align: center;
+      }
       &:hover {
         background-color: rgb(0, 132, 255);
       }
@@ -71,9 +82,14 @@ header {
   margin: 15% 0 0 14%;
   padding: 0%;
   width: 70%;
-  height: 147%;
+  height: 270%;
   background-color: rgba(0, 0, 0, 0.781);
   color: white;
+  @include mq("sm") {
+    margin: 25% 0 0 30%;
+    width: 65%;
+    text-align: center;
+  }
   a {
     text-decoration: none;
     color: rgb(0, 132, 255);
@@ -90,6 +106,10 @@ header {
     font-weight: bold;
     margin: 5% 0 10% 15%;
     padding: 0%;
+    @include mq("sm") {
+      font-size: 2.2em;
+      margin:10% 0 10% 20%;
+    }
   }
   .detail {
     position: absolute;
@@ -98,6 +118,10 @@ header {
     font-weight: bold;
     margin: 18% 0 10% 10%;
     padding: 0%;
+    @include mq("sm") {
+      margin: 45% 0 10% 18%;
+      width: 65%;
+    }
     h3 {
       font-size: 1.5em;
     }
@@ -107,51 +131,64 @@ header {
       padding: 1% 0;
     }
   }
-  .sell{
+  .sell {
     position: absolute;
     font-family: "Yuji Syuku", serif;
     color: white;
     font-weight: bold;
     margin: 50% 0 10% 10%;
     padding: 0%;
+    @include mq("sm") {
+      margin: 160% 0 10% 18%;
+      width: 65%;
+    }
     h3 {
       font-size: 1.6em;
     }
-    p,ul{
+    p,
+    ul {
       font-size: 1.2em;
       margin: 0%;
       padding: 1% 0;
     }
   }
-  .omake{
+  .omake {
     position: absolute;
     font-family: "Yuji Syuku", serif;
     margin: 50% 0 10% 60%;
     padding: 0%;
-    p{
-    font-size: 1.4em;
+    @include mq("sm") {
+      margin: 320% 0 0 18%;
+      width: 65%;
     }
-    h3{
+    p {
+      font-size: 1.4em;
+    }
+    h3 {
       font-size: 1.8em;
       color: white;
     }
   }
-  .staff{
+  .staff {
     position: absolute;
     font-family: "Yuji Syuku", serif;
     margin: 80% 0 10% 60%;
     padding: 0%;
-    h1{
+    @include mq("sm") {
+      margin: 410% 0 0 18%;
+      width: 65%;
+    }
+    h1 {
       color: rgb(190, 0, 190);
       font-size: 2em;
       font-weight: bold;
-     margin: 0%;
-     padding: 0%;
+      margin: 0%;
+      padding: 0%;
     }
-    h3{
+    h3 {
       font-size: 1.6em;
     }
-    p{
+    p {
       font-size: 1.3em;
     }
   }
