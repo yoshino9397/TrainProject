@@ -29,7 +29,19 @@
         <li><a href="./special.html">Special</a></li>
       </ul>
     </header>
-    <div class="main">
+    <div class="icon">
+      <img src="../Image/kaeruIcon.png" />
+    </div>
+    <div class="lg">
+      <p>
+        <span id="english" onclick="enSupport()">EN</span>/<span
+          id="japanese"
+          onclick="jpSupport()"
+          >JP</span
+        >
+      </p>
+    </div>
+    <div id="main">
       <div class="box1">
         <h2>▶︎ Support</h2>
         <p>
@@ -73,5 +85,54 @@
         <input type="submit" value="Submit" id="submit" />
       </div>
     </div>
+    <div id="en">
+      <div class="box1">
+        <h2>▶︎ Support</h2>
+        <p>
+          If you get stuck in the progress of the game (problem),<br />
+          Please refer to the <a href="#">detailed support page</a>.<br />
+          If the problem is not resolved, we will support you using this email
+          form.<br /><br />
+          ・Where the problem occurred<br />・What happened<br />・configuration
+          of the model used<br />
+          etc,We would appreciate it if you could describe it in as much detail
+          as possible.<br />
+          Also,go to "support@yoshino.com" with the above information +
+          screenshots if possible<br />
+          If you can show it, we can respond in more detail.
+        </p>
+
+        <h2>▶︎ Message</h2>
+        <p>
+          We also accept your messages to voice actors and singers here.<br /><br>
+          Please contact us if you'd like to tell us your opinion and
+          suggestions.<br />
+          Also, please use this form to send a message about our production team.<br />
+        </p>
+      </div>
+      <div class="box2">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          maxlength="100"
+        />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email"
+          maxlength="100"
+        /><input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Message"
+        />
+        <input type="submit" value="Submit" id="submit" />
+      </div>
+    </div>
+    <script src="../JS/support.js"></script>
   </body>
 </html>

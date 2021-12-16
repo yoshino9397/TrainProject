@@ -27,7 +27,7 @@ header ul {
 @media screen and (max-width: 600px) {
   header ul {
     display: block;
-    margin: 25% 0 0 0;
+    margin: 35% 0 0 0;
     position: fixed;
   }
 }
@@ -83,7 +83,46 @@ header ul .here:hover {
   background-color: #0084ff;
 }
 
-.main {
+.icon img {
+  width: 12%;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin: 1.5% 0 0 4%;
+  padding: 0%;
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .icon img {
+    margin: 2% 0 0 7%;
+    width: 16%;
+  }
+}
+
+.lg p {
+  position: absolute;
+  z-index: 100;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 1.8em;
+  margin: 13% 0 0 81%;
+  padding: 0%;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .lg p {
+    margin: 26% 0 0 5%;
+    width: 16%;
+  }
+}
+
+.lg p span:hover {
+  color: #0084ff;
+  cursor: pointer;
+}
+
+#main {
   display: block;
   position: absolute;
   z-index: 5;
@@ -93,22 +132,23 @@ header ul .here:hover {
   width: 70%;
   height: 130%;
   text-align: center;
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
-  .main {
-    margin: 25% 0 0 30%;
+  #main {
+    margin: 12% 0 0 30%;
     width: 55%;
     height: 140%;
   }
 }
 
-.main a {
+#main a {
   text-decoration: none;
   color: #00a2ff;
 }
 
-.main .box1 {
+#main .box1 {
   display: block;
   margin: 0%;
   padding: 0%;
@@ -116,48 +156,48 @@ header ul .here:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .main .box1 {
+  #main .box1 {
     margin-top: 10%;
   }
 }
 
-.main .box1 h2 {
+#main .box1 h2 {
   font-size: 1.5em;
   color: #d40e99;
 }
 
 @media screen and (max-width: 600px) {
-  .main .box1 h2 {
+  #main .box1 h2 {
     font-size: 1.3em;
   }
 }
 
-.main .box1 p {
+#main .box1 p {
   font-size: 1.2em;
   color: white;
   margin-bottom: 5%;
 }
 
 @media screen and (max-width: 600px) {
-  .main .box1 p {
+  #main .box1 p {
     font-size: 1em;
     margin-bottom: 15%;
   }
 }
 
-.main .box2 {
+#main .box2 {
   display: block;
   margin: 0%;
   padding: 0%;
   font-family: "Yuji Syuku", serif;
 }
 
-.main .box2 input {
+#main .box2 input {
   display: block;
 }
 
-.main .box2 #name,
-.main .box2 #email {
+#main .box2 #name,
+#main .box2 #email {
   width: 50%;
   margin: 3% 0 0% 27%;
   padding: 2% 2%;
@@ -170,15 +210,15 @@ header ul .here:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .main .box2 #name,
-  .main .box2 #email {
+  #main .box2 #name,
+  #main .box2 #email {
     width: 80%;
     margin: 3% 0 0 10%;
     border-width: 0.2em;
   }
 }
 
-.main .box2 #message {
+#main .box2 #message {
   width: 50%;
   margin: 3% 0 5% 27%;
   padding: 5% 2%;
@@ -191,14 +231,14 @@ header ul .here:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .main .box2 #message {
+  #main .box2 #message {
     width: 80%;
     margin: 3% 0 0 10%;
     border-width: 0.2em;
   }
 }
 
-.main .box2 #submit {
+#main .box2 #submit {
   margin: 0% 0 0 45%;
   padding: 1%;
   background-color: #00a2ff;
@@ -211,14 +251,155 @@ header ul .here:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .main .box2 #submit {
+  #main .box2 #submit {
     margin: 10% 0 0 34%;
     padding: 2%;
     width: 30%;
   }
 }
 
-.main .box2 #submit:hover {
+#main .box2 #submit:hover {
+  color: black;
+  background-color: darkcyan;
+}
+
+#en {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin: 11% 0 0 10%;
+  padding: 1% 5%;
+  background-color: rgba(0, 0, 0, 0.778);
+  width: 70%;
+  height: 130%;
+  text-align: center;
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #en {
+    margin: 12% 0 0 30%;
+    width: 55%;
+    height: 160%;
+  }
+}
+
+#en a {
+  text-decoration: none;
+  color: #00a2ff;
+}
+
+#en .box1 {
+  display: block;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Yuji Syuku", serif;
+}
+
+@media screen and (max-width: 600px) {
+  #en .box1 {
+    margin-top: 10%;
+  }
+}
+
+#en .box1 h2 {
+  font-size: 1.5em;
+  color: #d40e99;
+}
+
+@media screen and (max-width: 600px) {
+  #en .box1 h2 {
+    font-size: 1.3em;
+  }
+}
+
+#en .box1 p {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  #en .box1 p {
+    font-size: 1em;
+    margin-bottom: 15%;
+  }
+}
+
+#en .box2 {
+  display: block;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Yuji Syuku", serif;
+}
+
+#en .box2 input {
+  display: block;
+}
+
+#en .box2 #name,
+#en .box2 #email {
+  width: 50%;
+  margin: 3% 0 0% 27%;
+  padding: 2% 2%;
+  border-width: 0.3em;
+  border-color: #ca4aa4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 1em;
+          box-shadow: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  #en .box2 #name,
+  #en .box2 #email {
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-width: 0.2em;
+  }
+}
+
+#en .box2 #message {
+  width: 50%;
+  margin: 3% 0 5% 27%;
+  padding: 5% 2%;
+  border-width: 0.3em;
+  border-color: #ca4aa4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 1em;
+          box-shadow: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  #en .box2 #message {
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-width: 0.2em;
+  }
+}
+
+#en .box2 #submit {
+  margin: 0% 0 0 45%;
+  padding: 1%;
+  background-color: #00a2ff;
+  width: 13%;
+  border-radius: 75rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  #en .box2 #submit {
+    margin: 10% 0 0 34%;
+    padding: 2%;
+    width: 30%;
+  }
+}
+
+#en .box2 #submit:hover {
   color: black;
   background-color: darkcyan;
 }

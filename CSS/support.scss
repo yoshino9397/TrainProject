@@ -30,7 +30,7 @@ header {
     z-index: 100;
     @include mq("sm") {
       display: block;
-      margin: 25% 0 0 0;
+      margin: 35% 0 0 0;
       position: fixed;
     }
     a {
@@ -73,7 +73,45 @@ header {
     }
   }
 }
-.main {
+.icon {
+  img {
+    width: 12%;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    margin: 1.5% 0 0 4%;
+    padding: 0%;
+    float: left;
+    @include mq("sm") {
+      margin: 2% 0 0 7%;
+      width: 16%;
+    }
+  }
+}
+
+.lg {
+  p {
+    position: absolute;
+    z-index: 100;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 1.8em;
+    margin: 13% 0 0 81%;
+    padding: 0%;
+    color: white;
+    @include mq("sm") {
+      margin: 26% 0 0 5%;
+      width: 16%;
+    }
+    span {
+      &:hover {
+        color: rgb(0, 132, 255);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#main {
   display: block;
   position: absolute;
   z-index: 5;
@@ -83,10 +121,114 @@ header {
   width: 70%;
   height: 130%;
   text-align: center;
+  opacity: 1;
   @include mq("sm") {
-    margin: 25% 0 0 30%;
+    margin: 12% 0 0 30%;
     width: 55%;
     height: 140%;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+  }
+  .box1 {
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Yuji Syuku", serif;
+    @include mq("sm") {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 1.5em;
+      color: rgb(212, 14, 153);
+      @include mq("sm") {
+        font-size: 1.3em;
+      }
+    }
+    p {
+      font-size: 1.2em;
+      color: white;
+      margin-bottom: 5%;
+      @include mq("sm") {
+        font-size: 1em;
+        margin-bottom: 15%;
+      }
+    }
+  }
+  .box2 {
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Yuji Syuku", serif;
+    input {
+      display: block;
+    }
+    #name,
+    #email {
+      width: 50%;
+      margin: 3% 0 0% 27%;
+      padding: 2% 2%;
+      border-width: 0.3em;
+      border-color: rgb(202, 74, 164);
+      box-sizing: border-box;
+      box-shadow: 1em;
+      @include mq("sm") {
+        width: 80%;
+        margin: 3% 0 0 10%;
+        border-width: 0.2em;
+      }
+    }
+    #message {
+      width: 50%;
+      margin: 3% 0 5% 27%;
+      padding: 5% 2%;
+      border-width: 0.3em;
+      border-color: rgb(202, 74, 164);
+      box-sizing: border-box;
+      box-shadow: 1em;
+      @include mq("sm") {
+        width: 80%;
+        margin: 3% 0 0 10%;
+        border-width: 0.2em;
+      }
+    }
+    #submit {
+      margin: 0% 0 0 45%;
+      padding: 1%;
+      background-color: rgb(0, 162, 255);
+      width: 13%;
+      border-radius: 75rem;
+      box-sizing: border-box;
+      cursor: pointer;
+      color: white;
+      @include mq("sm") {
+        margin: 10% 0 0 34%;
+        padding: 2%;
+        width: 30%;
+      }
+      &:hover {
+        color: black;
+        background-color: darkcyan;
+      }
+    }
+  }
+}
+#en {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin: 11% 0 0 10%;
+  padding: 1% 5%;
+  background-color: rgba(0, 0, 0, 0.778);
+  width: 70%;
+  height: 130%;
+  text-align: center;
+  opacity: 0;
+  @include mq("sm") {
+    margin: 12% 0 0 30%;
+    width: 55%;
+    height: 160%;
   }
   a {
     text-decoration: none;
