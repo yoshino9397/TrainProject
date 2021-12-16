@@ -32,7 +32,7 @@ header {
     z-index: 100;
     @include mq("sm") {
       display: block;
-      margin: 25% 0 0 0;
+      margin: 35% 0 0 0;
       position: fixed;
     }
     a {
@@ -75,15 +75,52 @@ header {
     }
   }
 }
-.main {
+
+.icon {
+  p {
+    position: absolute;
+    z-index: 100;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 2em;
+    margin: 19% 0 0 5%;
+    padding: 0%;
+    color: white;
+    @include mq("sm") {
+      margin: 26% 0 0 5%;
+      width: 16%;
+    }
+    span {
+      &:hover {
+        color: rgb(0, 132, 255);
+        cursor: pointer;
+      }
+    }
+  }
+  img {
+    width: 12%;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    margin: 1.5% 0 0 4%;
+    padding: 0%;
+    float: left;
+    @include mq("sm") {
+      margin: 2% 0 0 7%;
+      width: 16%;
+    }
+  }
+}
+
+#main {
   display: block;
+  opacity: 1;
   position: absolute;
   z-index: 5;
   margin: 15% 0 0 14%;
   padding: 0%;
   width: 70%;
   height: 147%;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   @include mq("sm") {
     margin: 25% 0 0 30%;
@@ -109,7 +146,7 @@ header {
     padding: 0%;
     @include mq("sm") {
       font-size: 2.2em;
-      margin:10% 0 10% 20%;
+      margin: 10% 0 10% 20%;
     }
   }
   .detail {
@@ -191,6 +228,128 @@ header {
     }
     p {
       font-size: 1.3em;
+    }
+  }
+}
+
+#en {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin: 15% 0 0 14%;
+  padding: 0%;
+  width: 70%;
+  height: 150%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  @include mq("sm") {
+    margin: 25% 0 0 30%;
+    width: 65%;
+    height: 270%;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+  }
+  li {
+    list-style: none;
+  }
+  .title h1 {
+    position: absolute;
+    font-family: "New Tegomin", serif;
+    text-align: right;
+    color: rgb(190, 0, 190);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 5% 0 10% 15%;
+    padding: 0%;
+    @include mq("sm") {
+      font-size: 2.2em;
+      margin: 10% 0 10% 20%;
+    }
+  }
+  .detail {
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    color: white;
+    font-weight: bold;
+    margin: 18% 0 10% 10%;
+    padding: 0%;
+    @include mq("sm") {
+      margin: 45% 0 10% 18%;
+      width: 65%;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 0%;
+      padding: 1% 0;
+    }
+  }
+  .sell {
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    color: white;
+    font-weight: bold;
+    margin: 50% 0 10% 10%;
+    padding: 0%;
+    @include mq("sm") {
+      margin: 160% 0 10% 18%;
+      width: 65%;
+    }
+    h3 {
+      font-size: 1.6em;
+    }
+    p,
+    ul {
+      font-size: 1.2em;
+      margin: 0%;
+      padding: 1% 0;
+    }
+  }
+  .omake {
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    margin: 50% 0 10% 60%;
+    padding: 0%;
+    @include mq("sm") {
+      margin: 320% 0 0 18%;
+      width: 65%;
+    }
+    p {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 1.8em;
+      color: white;
+    }
+  }
+  .staff {
+    position: absolute;
+    font-family: "Yuji Syuku", serif;
+    margin: 80% 0 10% 60%;
+    padding: 0%;
+    @include mq("sm") {
+      margin: 410% 0 0 18%;
+      width: 65%;
+    }
+    h1 {
+      color: rgb(190, 0, 190);
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0%;
+      padding: 0%;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+    p {
+      font-size: 1.2em;
     }
   }
 }

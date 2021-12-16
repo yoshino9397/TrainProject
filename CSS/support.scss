@@ -95,7 +95,7 @@ header {
     z-index: 100;
     font-family: "Gentium Book Basic", serif;
     font-size: 1.8em;
-    margin: 13% 0 0 81%;
+    margin: 19% 0 0 5%;
     padding: 0%;
     color: white;
     @include mq("sm") {
@@ -115,10 +115,10 @@ header {
   display: block;
   position: absolute;
   z-index: 5;
-  margin: 11% 0 0 10%;
+  margin: 11% 0 0 16.5%;
   padding: 1% 5%;
-  background-color: rgba(0, 0, 0, 0.778);
-  width: 70%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 63%;
   height: 130%;
   text-align: center;
   opacity: 1;
@@ -220,7 +220,7 @@ header {
   z-index: 5;
   margin: 11% 0 0 10%;
   padding: 1% 5%;
-  background-color: rgba(0, 0, 0, 0.778);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 70%;
   height: 130%;
   text-align: center;
