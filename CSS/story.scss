@@ -22,17 +22,37 @@ a {
   text-decoration: none;
 }
 header {
-  .icon img {
-    width: 12%;
-    display: block;
-    position: absolute;
-    z-index: 5;
-    margin: 1.5% 0 0 4%;
-    padding: 0%;
-    float: left;
-    @include mq("sm") {
-      margin: 2% 0 0 7%;
-      width: 16%;
+  .icon {
+    p {
+      position: absolute;
+      z-index: 100;
+      font-family: "Gentium Book Basic", serif;
+      font-size: 2em;
+      margin: 19% 0 0 5%;
+      padding: 0%;
+      @include mq("sm") {
+        margin: 26% 0 0 5%;
+        width: 16%;
+      }
+      span{
+      &:hover {
+        color: rgb(0, 132, 255);
+        cursor: pointer;
+      }
+    }
+    }
+    img {
+      width: 12%;
+      display: block;
+      position: absolute;
+      z-index: 5;
+      margin: 1.5% 0 0 4%;
+      padding: 0%;
+      float: left;
+      @include mq("sm") {
+        margin: 2% 0 0 7%;
+        width: 16%;
+      }
     }
   }
   ul {
@@ -43,7 +63,7 @@ header {
     z-index: 100;
     @include mq("sm") {
       display: block;
-      margin: 28% 0 0 0;
+      margin: 37% 0 0 0;
     }
     a {
       text-decoration: none;
@@ -86,7 +106,7 @@ header {
   }
 }
 
-.jp {
+#jp {
   position: absolute;
   display: block;
   margin: 12% 0 0 16%;
@@ -98,6 +118,7 @@ header {
   font-family: "Yuji Syuku", serif;
   font-size: 1.1em;
   width: 53%;
+  opacity: 1;
   @include mq("sm") {
     font-size: 1.2em;
     margin: 12% 0 0 27%;
@@ -114,5 +135,39 @@ header {
     margin: 7% 0 5% 0;
     padding: 0%;
     font-size: 1.3em;
+  }
+}
+#en {
+  position: absolute;
+  display: block;
+  margin: 12% 0 0 16%;
+  padding: 2.5% 10%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.651);
+  z-index: 100;
+  text-align: center;
+  font-family: "Yuji Syuku", serif;
+  font-size: 1.3em;
+  width: 53%;
+  opacity: 0;
+  @include mq("sm") {
+    font-size: 1.2em;
+    margin: 12% 0 0 27%;
+    padding: 3% 7%;
+  }
+  span {
+    color: rgb(212, 14, 153);
+  }
+  h2 {
+    color: rgb(204, 29, 135);
+    margin-bottom: 3%;
+  }
+  .hanasu {
+    margin: 7% 0 5% 0;
+    padding: 0%;
+    font-size: 1.3em;
+  }
+  h1 {
+    margin-bottom: 5%;
   }
 }

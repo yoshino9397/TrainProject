@@ -91,7 +91,7 @@ header ul .here:hover {
   margin: 15% 0 0 14%;
   padding: 0%;
   width: 70%;
-  height: 270%;
+  height: 147%;
   background-color: rgba(0, 0, 0, 0.781);
   color: white;
 }
@@ -100,6 +100,7 @@ header ul .here:hover {
   .main {
     margin: 25% 0 0 30%;
     width: 65%;
+    height: 270%;
     text-align: center;
   }
 }

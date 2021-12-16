@@ -14,6 +14,27 @@ a {
   text-decoration: none;
 }
 
+header .icon p {
+  position: absolute;
+  z-index: 100;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 2em;
+  margin: 19% 0 0 5%;
+  padding: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  header .icon p {
+    margin: 26% 0 0 5%;
+    width: 16%;
+  }
+}
+
+header .icon p span:hover {
+  color: #0084ff;
+  cursor: pointer;
+}
+
 header .icon img {
   width: 12%;
   display: block;
@@ -44,7 +65,7 @@ header ul {
 @media screen and (max-width: 600px) {
   header ul {
     display: block;
-    margin: 28% 0 0 0;
+    margin: 37% 0 0 0;
   }
 }
 
@@ -99,7 +120,7 @@ header ul .here:hover {
   background-color: #0084ff;
 }
 
-.jp {
+#jp {
   position: absolute;
   display: block;
   margin: 12% 0 0 16%;
@@ -111,28 +132,71 @@ header ul .here:hover {
   font-family: "Yuji Syuku", serif;
   font-size: 1.1em;
   width: 53%;
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
-  .jp {
+  #jp {
     font-size: 1.2em;
     margin: 12% 0 0 27%;
     padding: 3% 7%;
   }
 }
 
-.jp span {
+#jp span {
   color: #d40e99;
 }
 
-.jp h2 {
+#jp h2 {
   color: #cc1d87;
   margin-bottom: 3%;
 }
 
-.jp .hanasu {
+#jp .hanasu {
   margin: 7% 0 5% 0;
   padding: 0%;
   font-size: 1.3em;
+}
+
+#en {
+  position: absolute;
+  display: block;
+  margin: 12% 0 0 16%;
+  padding: 2.5% 10%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.651);
+  z-index: 100;
+  text-align: center;
+  font-family: "Yuji Syuku", serif;
+  font-size: 1.3em;
+  width: 53%;
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #en {
+    font-size: 1.2em;
+    margin: 12% 0 0 27%;
+    padding: 3% 7%;
+  }
+}
+
+#en span {
+  color: #d40e99;
+}
+
+#en h2 {
+  color: #cc1d87;
+  margin-bottom: 3%;
+}
+
+#en .hanasu {
+  margin: 7% 0 5% 0;
+  padding: 0%;
+  font-size: 1.3em;
+}
+
+#en h1 {
+  margin-bottom: 5%;
 }
 /*# sourceMappingURL=story.css.map */

@@ -11,25 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
     <title>Story</title>
   </head>
   <body>
     <header>
       <div class="icon">
-      <img src="../Image/kaeruIcon.png">
+        <img src="../Image/kaeruIcon.png" />
+        <p><span id="english" onclick="en()">EN</span>/<span id="japanese" onclick="jp()">JP</span></p>
       </div>
       <ul>
         <li><a href="./index.html">Top</a></li>
         <li class="here"><a href="./story.html">Story</a></li>
-        <li ><a href="./chara.html">Character</a></li>
+        <li><a href="./chara.html">Character</a></li>
         <li><a href="./cgs.html">CGs</a></li>
         <li><a href="./support.html">Support</a></li>
         <li><a href="./special.html">Special</a></li>
       </ul>
     </header>
 
-    <div class="jp">
+    <div id="jp">
       <h1>大正十一年六月 <span>梅雨の神保町</span></h1>
       <p>
         会津から上京してきた正太朗は、帝大合格を目指す浪人生.<br />
@@ -48,5 +52,36 @@
       </p>
       <h2>友人の死の謎を追う、ポップオカルトな大正ミステリー</h2>
     </div>
+    <div id="en">
+      <h1>In June 1918<br /><span>Jimbocho in the rainy season</span></h1>
+      <p>
+        Shotaro came to Tokyo with his sights set on getting accepted<br />
+        to the Imperial University.<br />
+        However, he doesn't pass the entrance exam, and is so undisciplined and
+        wrapped up in endless fantasies that he's kicked out of<br />his
+        boarding house after only two years. <br /><br />
+        Through a stroke of luck,<br />Tamamori begins to live and work at
+        Umebachidou, a used book store.<br />
+        There, he enjoys whiling away his time as a<br />"student preparing for
+        entrance exams"<br />
+        and taking advantage of friends who are also from his hometown.
+        <br /><br />
+      </p>
+      <p>
+        But one right after the other,<br />mysterious deaths befall those
+        friends<br />
+        and, realizing he's been repeating the same rainy three days<br />over
+        and over again,<br />
+        Shotaro finds himself racing throughout Jinbochou to save them.<br />
+      </p>
+      <p class="hanasu">
+        What is real,<br />
+        what is a hallucination?
+      </p>
+      <h2>
+        In this pop-occult mystery that surrounds the deaths of his friends
+      </h2>
+    </div>
+    <script src="../JS/story.js"></script>
   </body>
 </html>
