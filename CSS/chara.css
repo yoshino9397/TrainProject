@@ -8,7 +8,13 @@ body {
   background-image: url(../Image/paper.jpg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  body {
+    background-repeat: repeat-y;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   body {
     background-repeat: repeat-y;
   }
@@ -28,7 +34,15 @@ header ul {
   z-index: 100;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul {
+    display: block;
+    margin: 13% 0 0 2%;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul {
     display: block;
     margin: 13% 0 0 0;
@@ -60,7 +74,18 @@ header ul li {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul li {
+    width: 120%;
+    font-size: 2em;
+    display: block;
+    padding: 10% 5%;
+    margin: 0% 0 0 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul li {
     width: 120%;
     font-size: 1.8em;
@@ -101,7 +126,13 @@ header ul .here:hover {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .charaBox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .charaBox {
     display: none;
   }
@@ -178,7 +209,17 @@ header ul .here:hover {
   padding: 3% 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shotaroExp {
+    display: block;
+    opacity: 1;
+    width: 60%;
+    padding: 4%;
+    margin: 13% 0 0 28%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shotaroExp {
     display: block;
     opacity: 1;
@@ -192,7 +233,16 @@ header ul .here:hover {
   width: 26%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shotaroExp img {
+    width: 30%;
+    height: 30%;
+    float: right;
+    margin: 0 0 0 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shotaroExp img {
     width: 30%;
     height: 30%;
@@ -211,7 +261,14 @@ header ul .here:hover {
   font-family: "Gentium Book Basic", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shotaroExp .box h3 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shotaroExp .box h3 {
     font-size: 1.7em;
     text-align: center;
@@ -223,7 +280,13 @@ header ul .here:hover {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shotaroExp .box h3 span {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shotaroExp .box h3 span {
     font-size: 1.2em;
   }
@@ -235,7 +298,13 @@ header ul .here:hover {
   font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shotaroExp .box p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shotaroExp .box p {
     font-size: 0.8em;
   }
@@ -248,7 +317,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shotaroExp .box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shotaroExp .box img {
     display: none;
   }
@@ -272,7 +347,17 @@ header ul .here:hover {
   padding: 3% 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #minatoExp {
+    display: block;
+    opacity: 1;
+    width: 60%;
+    padding: 4%;
+    margin: 70% 0 0 28%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #minatoExp {
     display: block;
     opacity: 1;
@@ -286,7 +371,16 @@ header ul .here:hover {
   width: 33%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #minatoExp img {
+    width: 37%;
+    height: 37%;
+    float: left;
+    margin: 0 5% 1% 0;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #minatoExp img {
     width: 37%;
     height: 37%;
@@ -305,7 +399,14 @@ header ul .here:hover {
   font-family: "Gentium Book Basic", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #minatoExp .box h3 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #minatoExp .box h3 {
     font-size: 1.7em;
     text-align: center;
@@ -317,7 +418,13 @@ header ul .here:hover {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #minatoExp .box h3 span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #minatoExp .box h3 span {
     font-size: 1.2em;
   }
@@ -329,7 +436,13 @@ header ul .here:hover {
   font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #minatoExp .box p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #minatoExp .box p {
     font-size: 0.8em;
   }
@@ -342,7 +455,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #minatoExp .box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #minatoExp .box img {
     display: none;
   }
@@ -366,7 +485,17 @@ header ul .here:hover {
   padding: 3% 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiodomeExp {
+    display: block;
+    opacity: 1;
+    width: 60%;
+    padding: 4%;
+    margin: 138% 0 0 28%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiodomeExp {
     display: block;
     opacity: 1;
@@ -380,7 +509,16 @@ header ul .here:hover {
   width: 30%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiodomeExp img {
+    width: 35%;
+    height: 35%;
+    float: right;
+    margin: 0 0 0 4%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiodomeExp img {
     width: 35%;
     height: 35%;
@@ -399,7 +537,14 @@ header ul .here:hover {
   font-family: "Gentium Book Basic", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiodomeExp .box h3 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiodomeExp .box h3 {
     font-size: 1.7em;
     text-align: center;
@@ -411,7 +556,13 @@ header ul .here:hover {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiodomeExp .box h3 span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiodomeExp .box h3 span {
     font-size: 1.2em;
   }
@@ -423,7 +574,13 @@ header ul .here:hover {
   font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiodomeExp .box p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiodomeExp .box p {
     font-size: 0.8em;
   }
@@ -436,7 +593,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiodomeExp .box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiodomeExp .box img {
     display: none;
   }
@@ -460,7 +623,17 @@ header ul .here:hover {
   padding: 3% 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiroExp {
+    display: block;
+    opacity: 1;
+    width: 60%;
+    padding: 4%;
+    margin: 200% 0 0 28%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiroExp {
     display: block;
     opacity: 1;
@@ -474,7 +647,16 @@ header ul .here:hover {
   width: 25%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiroExp img {
+    width: 35%;
+    height: 35%;
+    float: left;
+    margin: 0 4% 1% 0;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiroExp img {
     width: 35%;
     height: 35%;
@@ -493,7 +675,14 @@ header ul .here:hover {
   font-family: "Gentium Book Basic", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiroExp .box h3 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiroExp .box h3 {
     font-size: 1.7em;
     text-align: center;
@@ -505,7 +694,13 @@ header ul .here:hover {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiroExp .box h3 span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiroExp .box h3 span {
     font-size: 1.2em;
   }
@@ -517,7 +712,13 @@ header ul .here:hover {
   font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiroExp .box p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiroExp .box p {
     font-size: 0.8em;
   }
@@ -530,7 +731,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #shiroExp .box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #shiroExp .box img {
     display: none;
   }
@@ -554,7 +761,17 @@ header ul .here:hover {
   padding: 3% 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #juroExp {
+    display: block;
+    opacity: 1;
+    width: 60%;
+    padding: 4%;
+    margin: 275% 0 0 28%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #juroExp {
     display: block;
     opacity: 1;
@@ -568,7 +785,16 @@ header ul .here:hover {
   width: 33%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #juroExp img {
+    width: 40%;
+    height: 40%;
+    float: right;
+    margin: 0 0 0 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #juroExp img {
     width: 38%;
     height: 38%;
@@ -587,7 +813,14 @@ header ul .here:hover {
   font-family: "Gentium Book Basic", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #juroExp .box h3 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #juroExp .box h3 {
     font-size: 1.7em;
     text-align: center;
@@ -599,7 +832,13 @@ header ul .here:hover {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #juroExp .box h3 span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #juroExp .box h3 span {
     font-size: 1.2em;
   }
@@ -611,7 +850,13 @@ header ul .here:hover {
   font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #juroExp .box p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #juroExp .box p {
     font-size: 0.8em;
   }
@@ -624,7 +869,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #juroExp .box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #juroExp .box img {
     display: none;
   }
@@ -648,7 +899,17 @@ header ul .here:hover {
   padding: 3% 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #yomiExp {
+    display: block;
+    opacity: 1;
+    width: 60%;
+    padding: 4%;
+    margin: 341% 0 0 28%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #yomiExp {
     display: block;
     opacity: 1;
@@ -662,7 +923,16 @@ header ul .here:hover {
   width: 28%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #yomiExp img {
+    width: 35%;
+    height: 35%;
+    float: left;
+    margin: 0 4% 1% 0;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #yomiExp img {
     width: 35%;
     height: 35%;
@@ -681,7 +951,14 @@ header ul .here:hover {
   font-family: "Gentium Book Basic", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #yomiExp .box h3 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #yomiExp .box h3 {
     font-size: 1.7em;
     text-align: center;
@@ -693,7 +970,13 @@ header ul .here:hover {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #yomiExp .box h3 span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #yomiExp .box h3 span {
     font-size: 1.2em;
   }
@@ -705,7 +988,13 @@ header ul .here:hover {
   font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #yomiExp .box p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #yomiExp .box p {
     font-size: 0.8em;
   }
@@ -718,7 +1007,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .hidden #yomiExp .box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .hidden #yomiExp .box img {
     display: none;
   }

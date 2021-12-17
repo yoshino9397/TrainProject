@@ -23,7 +23,14 @@ header .icon p {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header .icon p {
+    margin: 26% 0 0 5%;
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header .icon p {
     margin: 26% 0 0 5%;
     width: 16%;
@@ -45,7 +52,14 @@ header .icon img {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header .icon img {
+    margin: 2% 0 0 7%;
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header .icon img {
     margin: 2% 0 0 7%;
     width: 16%;
@@ -62,10 +76,19 @@ header ul {
   z-index: 100;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul {
+    display: block;
+    margin: 33% 0 0 1.5%;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul {
     display: block;
     margin: 37% 0 0 0;
+    position: fixed;
   }
 }
 
@@ -93,7 +116,18 @@ header ul li {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul li {
+    width: 120%;
+    font-size: 1.8em;
+    display: block;
+    padding: 10% 5%;
+    margin: 0% 0 0 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul li {
     width: 120%;
     font-size: 1.8em;
@@ -133,11 +167,19 @@ header ul .here:hover {
   font-size: 1.1em;
   width: 53.5%;
   opacity: 1;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #jp {
+    font-size: 1.2em;
+    margin: 12% 0 0 24%;
+    padding: 3% 7%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #jp {
     font-size: 1.2em;
     margin: 12% 0 0 27%;
@@ -173,11 +215,19 @@ header ul .here:hover {
   font-size: 1.3em;
   width: 53%;
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en {
+    font-size: 1.2em;
+    margin: 12% 0 0 27%;
+    padding: 3% 7%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en {
     font-size: 1.2em;
     margin: 12% 0 0 27%;

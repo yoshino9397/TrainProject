@@ -1,23 +1,26 @@
 $breakpoints: (
   "sm": "screen and (max-width: 600px)",
-  "md": "screen and (max-width: 800px)",
-  "lg": "screen and (max-width: 1000px)",
-  "xl": "screen and (max-width: 1300px)",
+  "md": "screen and (max-width: 1000px)",
+  "lg": "screen and (max-width: 1500px)",
 ) !default;
 @mixin mq($breakpoint) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
   margin: 0%;
   padding: 0%;
   background-image: url(../Image/paper.jpg);
-  @include mq("sm") {
+  @include mq("md") {
     background-repeat: repeat-y;
+
+    @include mq("sm") {
+      background-repeat: repeat-y;
+    }
   }
 }
 a {
@@ -30,10 +33,15 @@ header {
     position: absolute;
     display: flex;
     z-index: 100;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
-      margin: 13% 0 0 0;
+      margin: 13% 0 0 2%;
       position: fixed;
+      @include mq("sm") {
+        display: block;
+        margin: 13% 0 0 0;
+        position: fixed;
+      }
     }
     a {
       text-decoration: none;
@@ -52,13 +60,21 @@ header {
       font-family: "Gentium Book Basic", serif;
       font-size: 2em;
       transition: 0.3s;
-      @include mq("sm") {
+      @include mq("md") {
         width: 120%;
-        font-size: 1.8em;
+        font-size: 2em;
         display: block;
         padding: 10% 5%;
         margin: 0% 0 0 5%;
         text-align: center;
+        @include mq("sm") {
+          width: 120%;
+          font-size: 1.8em;
+          display: block;
+          padding: 10% 5%;
+          margin: 0% 0 0 5%;
+          text-align: center;
+        }
       }
       &:hover {
         background-color: rgb(0, 132, 255);
@@ -84,8 +100,11 @@ header {
   z-index: 4;
   opacity: 1;
   transition: 0.5s;
-  @include mq("sm") {
+  @include mq("md") {
     display: none;
+    @include mq("sm") {
+      display: none;
+    }
   }
   #shotaro {
     img {
@@ -157,20 +176,33 @@ header {
     width: 70%;
     margin: 15% 3% 0 10%;
     padding: 3% 5%;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
       opacity: 1;
       width: 60%;
-      padding: 3%;
+      padding: 4%;
       margin: 13% 0 0 28%;
+      @include mq("sm") {
+        display: block;
+        opacity: 1;
+        width: 60%;
+        padding: 3%;
+        margin: 13% 0 0 28%;
+      }
     }
     img {
       width: 26%;
-      @include mq("sm") {
+      @include mq("md") {
         width: 30%;
         height: 30%;
         float: right;
         margin: 0 0 0 3%;
+        @include mq("sm") {
+          width: 30%;
+          height: 30%;
+          float: right;
+          margin: 0 0 0 3%;
+        }
       }
     }
     .box {
@@ -179,15 +211,22 @@ header {
         color: white;
         font-size: 1.7em;
         font-family: "Gentium Book Basic", serif;
-        @include mq("sm") {
+        @include mq("md") {
           font-size: 1.7em;
           text-align: center;
+          @include mq("sm") {
+            font-size: 1.7em;
+            text-align: center;
+          }
         }
         span {
           font-family: "Yuji Syuku", serif;
           font-size: 1.3em;
-          @include mq("sm") {
-            font-size: 1.2em;
+          @include mq("md") {
+            font-size: 1.3em;
+            @include mq("sm") {
+              font-size: 1.2em;
+            }
           }
         }
       }
@@ -195,8 +234,11 @@ header {
         color: white;
         font-family: "Yuji Syuku", serif;
         font-size: 1em;
-        @include mq("sm") {
-          font-size: 0.8em;
+        @include mq("md") {
+          font-size: 1em;
+          @include mq("sm") {
+            font-size: 0.8em;
+          }
         }
       }
       img {
@@ -204,8 +246,11 @@ header {
         margin: 15% 0 0 30%;
         padding: 0%;
         cursor: pointer;
-        @include mq("sm") {
+        @include mq("md") {
           display: none;
+          @include mq("sm") {
+            display: none;
+          }
         }
       }
     }
@@ -221,20 +266,33 @@ header {
     width: 70%;
     margin: 15% 3% 0 10%;
     padding: 3% 5%;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
       opacity: 1;
       width: 60%;
-      padding: 3% 3% 1% 3%;
-      margin: 74% 0 0 28%;
+      padding: 4%;
+      margin: 70% 0 0 28%;
+      @include mq("sm") {
+        display: block;
+        opacity: 1;
+        width: 60%;
+        padding: 3% 3% 1% 3%;
+        margin: 74% 0 0 28%;
+      }
     }
     img {
       width: 33%;
-      @include mq("sm") {
+      @include mq("md") {
         width: 37%;
         height: 37%;
         float: left;
-        margin: 0 4% 1% 0;
+        margin: 0 5% 1% 0;
+        @include mq("sm") {
+          width: 37%;
+          height: 37%;
+          float: left;
+          margin: 0 4% 1% 0;
+        }
       }
     }
     .box {
@@ -243,15 +301,22 @@ header {
         color: white;
         font-size: 1.7em;
         font-family: "Gentium Book Basic", serif;
-        @include mq("sm") {
+        @include mq("md") {
           font-size: 1.7em;
           text-align: center;
+          @include mq("sm") {
+            font-size: 1.7em;
+            text-align: center;
+          }
         }
         span {
           font-family: "Yuji Syuku", serif;
           font-size: 1.3em;
-          @include mq("sm") {
+          @include mq("md") {
             font-size: 1.2em;
+            @include mq("sm") {
+              font-size: 1.2em;
+            }
           }
         }
       }
@@ -259,8 +324,11 @@ header {
         color: white;
         font-family: "Yuji Syuku", serif;
         font-size: 1em;
-        @include mq("sm") {
-          font-size: 0.8em;
+        @include mq("md") {
+          font-size: 1em;
+          @include mq("sm") {
+            font-size: 0.8em;
+          }
         }
       }
       img {
@@ -268,8 +336,11 @@ header {
         margin: 15% 0 0 30%;
         padding: 0%;
         cursor: pointer;
-        @include mq("sm") {
+        @include mq("md") {
           display: none;
+          @include mq("sm") {
+            display: none;
+          }
         }
       }
     }
@@ -285,20 +356,33 @@ header {
     width: 70%;
     margin: 15% 3% 0 10%;
     padding: 3% 5%;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
       opacity: 1;
       width: 60%;
-      padding: 3% 3% 1% 3%;
-      margin: 154% 0 0 28%;
+      padding: 4%;
+      margin: 138% 0 0 28%;
+      @include mq("sm") {
+        display: block;
+        opacity: 1;
+        width: 60%;
+        padding: 3% 3% 1% 3%;
+        margin: 154% 0 0 28%;
+      }
     }
     img {
       width: 30%;
-      @include mq("sm") {
+      @include mq("md") {
         width: 35%;
         height: 35%;
         float: right;
-        margin: 0 0 0 3%;
+        margin: 0 0 0 4%;
+        @include mq("sm") {
+          width: 35%;
+          height: 35%;
+          float: right;
+          margin: 0 0 0 3%;
+        }
       }
     }
     .box {
@@ -307,34 +391,47 @@ header {
         color: white;
         font-size: 1.7em;
         font-family: "Gentium Book Basic", serif;
-        @include mq("sm") {
-         font-size: 1.7em;
-         text-align: center;
+        @include mq("md") {
+          font-size: 1.7em;
+          text-align: center;
+          @include mq("sm") {
+            font-size: 1.7em;
+            text-align: center;
+          }
         }
         span {
           font-family: "Yuji Syuku", serif;
           font-size: 1.3em;
-          @include mq("sm") {
+          @include mq("md") {
             font-size: 1.2em;
-           }
+            @include mq("sm") {
+              font-size: 1.2em;
+            }
+          }
         }
       }
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
         font-size: 1em;
-        @include mq("sm") {
-          font-size: 0.8em;
-         }
+        @include mq("md") {
+          font-size: 1em;
+          @include mq("sm") {
+            font-size: 0.8em;
+          }
+        }
       }
       img {
         width: 20%;
         margin: 15% 0 0 30%;
         padding: 0%;
         cursor: pointer;
-        @include mq("sm") {
+        @include mq("md") {
           display: none;
-         }
+          @include mq("sm") {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -349,20 +446,33 @@ header {
     width: 70%;
     margin: 15% 3% 0 10%;
     padding: 3% 5%;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
       opacity: 1;
       width: 60%;
-      padding: 3% 3% 1% 3%;
-      margin: 220% 0 0 28%;
+      padding: 4%;
+      margin: 200% 0 0 28%;
+      @include mq("sm") {
+        display: block;
+        opacity: 1;
+        width: 60%;
+        padding: 3% 3% 1% 3%;
+        margin: 220% 0 0 28%;
+      }
     }
     img {
       width: 25%;
-      @include mq("sm") {
+      @include mq("md") {
         width: 35%;
         height: 35%;
         float: left;
         margin: 0 4% 1% 0;
+        @include mq("sm") {
+          width: 35%;
+          height: 35%;
+          float: left;
+          margin: 0 4% 1% 0;
+        }
       }
     }
     .box {
@@ -371,15 +481,22 @@ header {
         color: white;
         font-size: 1.7em;
         font-family: "Gentium Book Basic", serif;
-        @include mq("sm") {
+        @include mq("md") {
           font-size: 1.7em;
           text-align: center;
+          @include mq("sm") {
+            font-size: 1.7em;
+            text-align: center;
+          }
         }
         span {
           font-family: "Yuji Syuku", serif;
           font-size: 1.3em;
-          @include mq("sm") {
+          @include mq("md") {
             font-size: 1.2em;
+            @include mq("sm") {
+              font-size: 1.2em;
+            }
           }
         }
       }
@@ -387,8 +504,11 @@ header {
         color: white;
         font-family: "Yuji Syuku", serif;
         font-size: 1em;
-        @include mq("sm") {
-          font-size: 0.8em;
+        @include mq("md") {
+          font-size: 1em;
+          @include mq("sm") {
+            font-size: 0.8em;
+          }
         }
       }
       img {
@@ -396,8 +516,11 @@ header {
         margin: 15% 0 0 30%;
         padding: 0%;
         cursor: pointer;
-        @include mq("sm") {
+        @include mq("md") {
           display: none;
+          @include mq("sm") {
+            display: none;
+          }
         }
       }
     }
@@ -413,20 +536,33 @@ header {
     width: 70%;
     margin: 15% 3% 0 10%;
     padding: 3% 5%;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
       opacity: 1;
       width: 60%;
-      padding: 3% 3% 1% 3%;
-      margin: 297% 0 0 28%;
+      padding: 4%;
+      margin: 275% 0 0 28%;
+      @include mq("sm") {
+        display: block;
+        opacity: 1;
+        width: 60%;
+        padding: 3% 3% 1% 3%;
+        margin: 297% 0 0 28%;
+      }
     }
     img {
       width: 33%;
-      @include mq("sm") {
-        width: 38%;
-        height: 38%;
+      @include mq("md") {
+        width: 40%;
+        height: 40%;
         float: right;
         margin: 0 0 0 3%;
+        @include mq("sm") {
+          width: 38%;
+          height: 38%;
+          float: right;
+          margin: 0 0 0 3%;
+        }
       }
     }
     .box {
@@ -435,34 +571,47 @@ header {
         color: white;
         font-size: 1.7em;
         font-family: "Gentium Book Basic", serif;
-        @include mq("sm") {
-         font-size: 1.7em;
-         text-align: center;
+        @include mq("md") {
+          font-size: 1.7em;
+          text-align: center;
+          @include mq("sm") {
+            font-size: 1.7em;
+            text-align: center;
+          }
         }
         span {
           font-family: "Yuji Syuku", serif;
           font-size: 1.3em;
-          @include mq("sm") {
+          @include mq("md") {
             font-size: 1.2em;
-           }
+            @include mq("sm") {
+              font-size: 1.2em;
+            }
+          }
         }
       }
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
         font-size: 1em;
-        @include mq("sm") {
-          font-size: 0.8em;
-         }
+        @include mq("md") {
+          font-size: 1em;
+          @include mq("sm") {
+            font-size: 0.8em;
+          }
+        }
       }
       img {
         width: 20%;
         margin: 15% 0 0 30%;
         padding: 0%;
         cursor: pointer;
-        @include mq("sm") {
+        @include mq("md") {
           display: none;
-         }
+          @include mq("sm") {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -477,20 +626,33 @@ header {
     width: 70%;
     margin: 15% 3% 0 10%;
     padding: 3% 5%;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
       opacity: 1;
       width: 60%;
-      padding: 3% 3% 1% 3%;
-      margin: 360% 0 0 28%;
+      padding: 4%;
+      margin: 341% 0 0 28%;
+      @include mq("sm") {
+        display: block;
+        opacity: 1;
+        width: 60%;
+        padding: 3% 3% 1% 3%;
+        margin: 360% 0 0 28%;
+      }
     }
     img {
       width: 28%;
-      @include mq("sm") {
+      @include mq("md") {
         width: 35%;
         height: 35%;
         float: left;
         margin: 0 4% 1% 0;
+        @include mq("sm") {
+          width: 35%;
+          height: 35%;
+          float: left;
+          margin: 0 4% 1% 0;
+        }
       }
     }
     .box {
@@ -499,15 +661,22 @@ header {
         color: white;
         font-size: 1.7em;
         font-family: "Gentium Book Basic", serif;
-        @include mq("sm") {
+        @include mq("md") {
           font-size: 1.7em;
           text-align: center;
+          @include mq("sm") {
+            font-size: 1.7em;
+            text-align: center;
+          }
         }
         span {
           font-family: "Yuji Syuku", serif;
           font-size: 1.3em;
-          @include mq("sm") {
+          @include mq("md") {
             font-size: 1.2em;
+            @include mq("sm") {
+              font-size: 1.2em;
+            }
           }
         }
       }
@@ -515,8 +684,11 @@ header {
         color: white;
         font-family: "Yuji Syuku", serif;
         font-size: 1em;
-        @include mq("sm") {
-          font-size: 0.8em;
+        @include mq("md") {
+          font-size: 1em;
+          @include mq("sm") {
+            font-size: 0.8em;
+          }
         }
       }
       img {
@@ -524,8 +696,11 @@ header {
         margin: 15% 0 0 30%;
         padding: 0%;
         cursor: pointer;
-        @include mq("sm") {
+        @include mq("md") {
           display: none;
+          @include mq("sm") {
+            display: none;
+          }
         }
       }
     }
