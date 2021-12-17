@@ -28,7 +28,14 @@ img {
           clip-path: polygon(0 0, 56.5% 0, 74.2% 100%, 0% 100%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .bg {
+    width: 100%;
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .bg {
     width: 100%;
     margin-top: 35%;
@@ -47,7 +54,15 @@ h1 {
   text-shadow: 2px 4px #be009f;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3.3em;
+    margin: -93% 0 0 24%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   h1 {
     font-size: 3em;
     margin: -100% 0 0 20%;
@@ -67,7 +82,15 @@ h3 {
   text-shadow: 2px 4px #be009f;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: 2.5em;
+    margin: -83% 0 0 50%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   h3 {
     font-size: 2.3em;
     margin: -87% 0 0 50%;
@@ -92,7 +115,13 @@ h3 {
   margin: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 div {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 div {
     display: inline-block;
   }
@@ -115,7 +144,14 @@ h3 {
   transition: 0.2s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 .story p {
+    font-size: 2.2em;
+    margin: -32% 0% 0 15%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 .story p {
     font-size: 1.7em;
     margin: -33% 0% 0 14%;
@@ -134,7 +170,15 @@ h3 {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 .story img {
+    width: 11%;
+    margin: -40% 0% 0 14%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 .story img {
     width: 11%;
     margin: -41% 0% 0 14%;
@@ -154,7 +198,14 @@ h3 {
   transition: 0.2s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 .chara p {
+    font-size: 2.2em;
+    margin: -18% 0% 0 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 .chara p {
     font-size: 1.5em;
     margin: -19% 0% 0 10%;
@@ -173,7 +224,15 @@ h3 {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 .chara img {
+    width: 11%;
+    margin: -26% 0% 0 13%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 .chara img {
     width: 11%;
     margin: -28% 0% 0 13%;
@@ -194,7 +253,14 @@ h3 {
   transition: 0.2s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 .cgs p {
+    font-size: 2.7em;
+    margin: -4% 0% 0 13%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 .cgs p {
     font-size: 1.9em;
     margin: -6% 0% 0 13%;
@@ -214,7 +280,15 @@ h3 {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji1 .cgs img {
+    width: 11%;
+    margin: -13% 0% 0 11%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji1 .cgs img {
     width: 11%;
     margin: -15% 0% 0 11%;
@@ -256,7 +330,14 @@ h3 {
   transition: 0.2s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji2 .support p {
+    font-size: 2.3em;
+    margin: 34% 0% 0 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji2 .support p {
     font-size: 1.8em;
     margin: 32% 0% 0 2.3%;
@@ -275,7 +356,15 @@ h3 {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji2 .support img {
+    width: 13%;
+    margin: 27% 0% 0 4%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji2 .support img {
     width: 13%;
     margin: 25% 0% 0 4%;
@@ -295,7 +384,14 @@ h3 {
   transition: 0.2s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji2 .special p {
+    font-size: 2.4em;
+    margin: 49% 0% 0 4%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji2 .special p {
     font-size: 1.9em;
     margin: 47% 0% 0 3%;
@@ -314,7 +410,15 @@ h3 {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .mokuji2 .special img {
+    width: 13%;
+    margin: 42% 0% 0 4%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .mokuji2 .special img {
     width: 13%;
     margin: 40% 0% 0 4%;
