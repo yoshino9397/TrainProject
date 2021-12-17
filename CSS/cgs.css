@@ -8,7 +8,13 @@ body {
   background-image: url(../Image/paper.jpg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  body {
+    background-repeat: repeat-y;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   body {
     background-repeat: repeat-y;
   }
@@ -28,10 +34,18 @@ header ul {
   z-index: 100;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   header ul {
     display: block;
-    margin: 25% 0 0 0;
+    margin: 13% 0 0 0;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
+  header ul {
+    display: block;
+    margin: 13% 0 0 0;
     position: fixed;
   }
 }
@@ -60,7 +74,18 @@ header ul li {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul li {
+    width: 120%;
+    font-size: 1.8em;
+    display: block;
+    padding: 10% 4%;
+    margin: 0% 0 0 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul li {
     width: 120%;
     font-size: 1.8em;
@@ -95,7 +120,15 @@ header ul .here:hover {
   z-index: 9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .juroSunset {
+    margin: 15% 0 0 18%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .juroSunset {
     margin: 25% 0 0 33%;
     padding: 0%;
@@ -113,7 +146,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .juroSunsetOver {
+    margin: 15% 0 0 18%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .juroSunsetOver {
     margin: 25% 0 0 33%;
     padding: 0%;
@@ -129,7 +170,15 @@ header ul .here:hover {
   z-index: 9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .surpriseYomi {
+    margin: 15% 0 0 60%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .surpriseYomi {
     margin: 62% 0 0 33%;
     padding: 0%;
@@ -147,7 +196,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .surpriseYomiOver {
+    margin: 15% 0 0 60%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .surpriseYomiOver {
     margin: 62% 0 0 33%;
     padding: 0%;
@@ -163,7 +220,15 @@ header ul .here:hover {
   z-index: 9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .cryShiro {
+    margin: 43% 0 0 18%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .cryShiro {
     margin: 98% 0 0 33%;
     padding: 0%;
@@ -181,7 +246,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .cryShiroOver {
+    margin: 43% 0 0 18%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .cryShiroOver {
     margin: 98% 0 0 33%;
     padding: 0%;
@@ -197,7 +270,15 @@ header ul .here:hover {
   z-index: 9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .loneliness {
+    margin: 43% 0 0 60%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .loneliness {
     margin: 139% 0 0 33%;
     padding: 0%;
@@ -215,7 +296,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .lonelinessOver {
+    margin: 43% 0 0 60%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .lonelinessOver {
     margin: 139% 0 0 33%;
     padding: 0%;
@@ -231,7 +320,15 @@ header ul .here:hover {
   z-index: 9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .gagmori {
+    margin: 73% 0 0 18%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .gagmori {
     margin: 178% 0 0 33%;
     padding: 0%;
@@ -249,7 +346,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .gagmoriOver {
+    margin: 73% 0 0 18%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .gagmoriOver {
     margin: 178% 0 0 33%;
     padding: 0%;
@@ -265,7 +370,15 @@ header ul .here:hover {
   z-index: 9;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .suicide {
+    margin: 73% 0 0 60%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .suicide {
     margin: 221% 0 0 33%;
     padding: 0%;
@@ -283,7 +396,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .suicideOver {
+    margin: 73% 0 0 60%;
+    padding: 0%;
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .suicideOver {
     margin: 221% 0 0 33%;
     padding: 0%;
@@ -322,7 +443,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal #close {
+    margin: 13% 0 0 90%;
+    width: 10%;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal #close {
     margin: 90% 0 0 40%;
     width: 10%;
@@ -341,7 +470,14 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal img {
+    margin: 22% 0 0 5%;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal img {
     margin: 40% 0 0 5%;
     width: 85%;
@@ -362,7 +498,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal #mae {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal #mae {
     display: none;
   }
@@ -382,7 +524,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal #ushiro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal #ushiro {
     display: none;
   }
@@ -406,7 +554,15 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal5 #close {
+    margin: 11% 0 0 90%;
+    width: 10%;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal5 #close {
     margin: 100% 0 0 40%;
     width: 10%;
@@ -425,7 +581,14 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal5 img {
+    margin: 17% 0 0 5%;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal5 img {
     margin: 40% 0 0 5%;
     width: 85%;
@@ -446,7 +609,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal5 #mae {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal5 #mae {
     display: none;
   }
@@ -466,7 +635,13 @@ header ul .here:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .pics .modal5 #ushiro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .pics .modal5 #ushiro {
     display: none;
   }

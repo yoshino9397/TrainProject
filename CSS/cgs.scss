@@ -1,23 +1,25 @@
 $breakpoints: (
   "sm": "screen and (max-width: 600px)",
-  "md": "screen and (max-width: 800px)",
-  "lg": "screen and (max-width: 1000px)",
-  "xl": "screen and (max-width: 1300px)",
+  "md": "screen and (max-width: 1000px)",
+  "lg": "screen and (max-width: 1500px)",
 ) !default;
 @mixin mq($breakpoint) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
   margin: 0%;
   padding: 0%;
   background-image: url(../Image/paper.jpg);
-  @include mq("sm") {
+  @include mq("md") {
     background-repeat: repeat-y;
+    @include mq("sm") {
+      background-repeat: repeat-y;
+    }
   }
 }
 a {
@@ -30,10 +32,16 @@ header {
     position: absolute;
     display: flex;
     z-index: 100;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
-      margin: 25% 0 0 0;
+      margin: 13% 0 0 0;
       position: fixed;
+
+      @include mq("sm") {
+        display: block;
+        margin: 13% 0 0 0;
+        position: fixed;
+      }
     }
     a {
       text-decoration: none;
@@ -52,13 +60,21 @@ header {
       font-family: "Gentium Book Basic", serif;
       font-size: 2em;
       transition: 0.3s;
-      @include mq("sm") {
+      @include mq("md") {
         width: 120%;
         font-size: 1.8em;
         display: block;
-        padding: 10% 5%;
+        padding: 10% 4%;
         margin: 0% 0 0 5%;
         text-align: center;
+        @include mq("sm") {
+          width: 120%;
+          font-size: 1.8em;
+          display: block;
+          padding: 10% 5%;
+          margin: 0% 0 0 5%;
+          text-align: center;
+        }
       }
       &:hover {
         background-color: rgb(0, 132, 255);
@@ -83,10 +99,15 @@ header {
     position: absolute;
     width: 27%;
     z-index: 9;
-    @include mq("sm") {
-      margin: 25% 0 0 33%;
+    @include mq("md") {
+      margin: 15% 0 0 18%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 25% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .juroSunsetOver {
@@ -97,10 +118,15 @@ header {
     height: 26%;
     z-index: 30;
     cursor: pointer;
-    @include mq("sm") {
-      margin: 25% 0 0 33%;
+    @include mq("md") {
+      margin: 15% 0 0 18%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 25% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
 
@@ -110,10 +136,15 @@ header {
     position: absolute;
     width: 27%;
     z-index: 9;
-    @include mq("sm") {
-      margin: 62% 0 0 33%;
+    @include mq("md") {
+      margin: 15% 0 0 60%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 62% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .surpriseYomiOver {
@@ -124,10 +155,15 @@ header {
     height: 26%;
     z-index: 30;
     cursor: pointer;
-    @include mq("sm") {
-      margin: 62% 0 0 33%;
+    @include mq("md") {
+      margin: 15% 0 0 60%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 62% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .cryShiro {
@@ -136,10 +172,16 @@ header {
     position: absolute;
     width: 25%;
     z-index: 9;
-    @include mq("sm") {
-      margin: 98% 0 0 33%;
+    @include mq("md") {
+      margin: 43% 0 0 18%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+
+      @include mq("sm") {
+        margin: 98% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .cryShiroOver {
@@ -150,10 +192,15 @@ header {
     height: 26%;
     z-index: 30;
     cursor: pointer;
-    @include mq("sm") {
-      margin: 98% 0 0 33%;
+    @include mq("md") {
+      margin: 43% 0 0 18%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 98% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .loneliness {
@@ -162,10 +209,15 @@ header {
     position: absolute;
     width: 30%;
     z-index: 9;
-    @include mq("sm") {
-      margin: 139% 0 0 33%;
+    @include mq("md") {
+      margin: 43% 0 0 60%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 139% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .lonelinessOver {
@@ -176,10 +228,15 @@ header {
     height: 26%;
     z-index: 30;
     cursor: pointer;
-    @include mq("sm") {
-      margin: 139% 0 0 33%;
+    @include mq("md") {
+      margin: 43% 0 0 60%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 139% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .gagmori {
@@ -188,10 +245,15 @@ header {
     position: absolute;
     width: 28%;
     z-index: 9;
-    @include mq("sm") {
-      margin: 178% 0 0 33%;
+    @include mq("md") {
+      margin: 73% 0 0 18%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 178% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .gagmoriOver {
@@ -202,10 +264,15 @@ header {
     height: 28%;
     z-index: 30;
     cursor: pointer;
-    @include mq("sm") {
-      margin: 178% 0 0 33%;
+    @include mq("md") {
+      margin: 73% 0 0 18%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 178% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .suicide {
@@ -214,10 +281,15 @@ header {
     position: absolute;
     width: 28%;
     z-index: 9;
-    @include mq("sm") {
-      margin: 221% 0 0 33%;
+    @include mq("md") {
+      margin: 73% 0 0 60%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 221% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   .suicideOver {
@@ -228,10 +300,15 @@ header {
     height: 26%;
     z-index: 30;
     cursor: pointer;
-    @include mq("sm") {
-      margin: 221% 0 0 33%;
+    @include mq("md") {
+      margin: 73% 0 0 60%;
       padding: 0%;
-      width: 60%;
+      width: 37%;
+      @include mq("sm") {
+        margin: 221% 0 0 33%;
+        padding: 0%;
+        width: 60%;
+      }
     }
   }
   #mask {
@@ -259,10 +336,15 @@ header {
       color: rgba(255, 255, 255, 0);
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
-        margin: 90% 0 0 40%; 
+      @include mq("md") {
+        margin: 13% 0 0 90%;
         width: 10%;
-        font-size: 2em;
+        font-size: 3em;
+        @include mq("sm") {
+          margin: 90% 0 0 40%;
+          width: 10%;
+          font-size: 2em;
+        }
       }
     }
     img {
@@ -273,9 +355,13 @@ header {
       transition: 0.4s;
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
-        margin: 40% 0 0 5%; 
+      @include mq("md") {
+        margin: 22% 0 0 5%;
         width: 85%;
+        @include mq("sm") {
+          margin: 40% 0 0 5%;
+          width: 85%;
+        }
       }
     }
     #mae {
@@ -290,8 +376,11 @@ header {
       color: rgba(255, 255, 255, 0);
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
+      @include mq("md") {
         display: none;
+        @include mq("sm") {
+          display: none;
+        }
       }
     }
     #ushiro {
@@ -306,8 +395,11 @@ header {
       color: rgba(255, 255, 255, 0);
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
-       display: none;
+      @include mq("md") {
+        display: none;
+        @include mq("sm") {
+          display: none;
+        }
       }
     }
   }
@@ -325,10 +417,15 @@ header {
       color: rgba(255, 255, 255, 0);
       z-index: 810;
       cursor: pointer;
-      @include mq("sm") {
-        margin: 100% 0 0 40%; 
+      @include mq("md") {
+        margin: 11% 0 0 90%;
         width: 10%;
-        font-size: 2em;
+        font-size: 3em;
+        @include mq("sm") {
+          margin: 100% 0 0 40%;
+          width: 10%;
+          font-size: 2em;
+        }
       }
     }
     img {
@@ -339,9 +436,13 @@ header {
       transition: 0.4s;
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
-        margin: 40% 0 0 5%; 
+      @include mq("md") {
+        margin: 17% 0 0 5%;
         width: 85%;
+        @include mq("sm") {
+          margin: 40% 0 0 5%;
+          width: 85%;
+        }
       }
     }
     #mae {
@@ -356,8 +457,11 @@ header {
       color: rgba(255, 255, 255, 0);
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
+      @include mq("md") {
         display: none;
+        @include mq("sm") {
+          display: none;
+        }
       }
     }
     #ushiro {
@@ -372,8 +476,11 @@ header {
       color: rgba(255, 255, 255, 0);
       z-index: 800;
       cursor: pointer;
-      @include mq("sm") {
+      @include mq("md") {
         display: none;
+        @include mq("sm") {
+          display: none;
+        }
       }
     }
   }
