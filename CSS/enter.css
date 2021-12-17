@@ -1,0 +1,56 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #535353;
+}
+
+.enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+}
+
+.enter img {
+  position: absolute;
+  margin: 5% 0 0 20%;
+  padding: 0%;
+  width: 30%;
+}
+
+@media screen and (max-width: 1400px) {
+  .enter img {
+    width: 55%;
+  }
+}
+
+.enter p {
+  position: absolute;
+  color: white;
+  font-size: 3.4em;
+  font-family: "Gentium Book Basic", serif;
+  margin: 5% 0% 0 50%;
+  padding: 9%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+@media screen and (max-width: 1400px) {
+  .enter p {
+    display: none;
+  }
+}
+
+.enter p .span2 {
+  color: #00ccff;
+}
+
+.enter p .span3 {
+  color: #d400ff;
+}
+
+.enter p .span4 {
+  color: #fbff00;
+}
+/*# sourceMappingURL=enter.css.map */

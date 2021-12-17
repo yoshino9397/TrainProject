@@ -1,0 +1,51 @@
+$breakpoints: (
+  "md": "screen and (max-width: 1400px)",
+  "lg": "screen and (max-width: 1500px)",
+) !default;
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(83, 83, 83);
+}
+.enter {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  img {
+    position: absolute;
+    margin: 5% 0 0 20%;
+    padding: 0%;
+    width: 30%;
+    @include mq("md") {
+      width: 55%;
+    }
+  }
+  p {
+    position: absolute;
+    color: white;
+    font-size: 3.4em;
+    font-family: "Gentium Book Basic", serif;
+    margin: 5% 0% 0 50%;
+    padding: 9%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    @include mq("md") {
+      display: none;
+    }
+    .span2 {
+      color: rgb(0, 204, 255);
+    }
+    .span3 {
+      color: rgb(212, 0, 255);
+    }
+    .span4 {
+      color: rgb(251, 255, 0);
+    }
+  }
+}
