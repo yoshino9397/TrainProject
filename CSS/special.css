@@ -5,7 +5,13 @@ body {
   background-image: url(../Image/paper.jpg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  body {
+    background-repeat: repeat-y;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   body {
     background-repeat: repeat-y;
   }
@@ -25,7 +31,15 @@ header ul {
   z-index: 100;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul {
+    display: block;
+    margin: 40% 0 0 2%;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul {
     display: block;
     margin: 35% 0 0 0;
@@ -57,7 +71,18 @@ header ul li {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul li {
+    width: 140%;
+    font-size: 1.9em;
+    display: block;
+    padding: 10% 5%;
+    margin: 0% 0 0 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul li {
     width: 120%;
     font-size: 1.8em;
@@ -94,7 +119,14 @@ header ul .here:hover {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .icon p {
+    margin: 30% 0 0 7%;
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .icon p {
     margin: 26% 0 0 5%;
     width: 16%;
@@ -116,7 +148,14 @@ header ul .here:hover {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .icon img {
+    margin: 2% 0 0 5%;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .icon img {
     margin: 2% 0 0 7%;
     width: 16%;
@@ -138,7 +177,16 @@ header ul .here:hover {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main {
+    margin: 12% 0 0 28%;
+    width: 68%;
+    height: 285%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main {
     margin: 12% 0 0 30%;
     width: 65%;
@@ -167,7 +215,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .title h1 {
+    font-size: 2.4em;
+    margin: 11% 0 6% 13%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .title h1 {
     font-size: 2.2em;
     margin: 10% 0 10% 20%;
@@ -183,7 +238,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .detail {
+    margin: 50% 0 10% 13%;
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .detail {
     margin: 45% 0 10% 18%;
     width: 65%;
@@ -209,7 +271,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .sell {
+    margin: 113% 0 10% 13%;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .sell {
     margin: 160% 0 10% 18%;
     width: 65%;
@@ -236,7 +305,14 @@ header ul .here:hover {
   z-index: 999;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .pic img {
+    margin: 7% 0 0 63%;
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .pic img {
     display: none;
   }
@@ -249,7 +325,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .omake {
+    margin: 230% 0 0 13%;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .omake {
     margin: 320% 0 0 18%;
     width: 65%;
@@ -272,7 +355,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .staff {
+    margin: 290% 0 0 18%;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .staff {
     margin: 410% 0 0 18%;
     width: 65%;
@@ -310,7 +400,16 @@ header ul .here:hover {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en {
+    margin: 12% 0 0 28%;
+    width: 68%;
+    height: 315%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en {
     margin: 12% 0 0 30%;
     width: 65%;
@@ -339,7 +438,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .title h1 {
+    font-size: 2.6em;
+    margin: 12% 0 10% 12%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .title h1 {
     font-size: 2.2em;
     margin: 10% 0 10% 20%;
@@ -355,7 +461,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .detail {
+    margin: 55% 0 10% 18%;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .detail {
     margin: 45% 0 10% 18%;
     width: 65%;
@@ -381,7 +494,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .sell {
+    margin: 138% 0 10% 18%;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .sell {
     margin: 160% 0 10% 18%;
     width: 65%;
@@ -408,19 +528,15 @@ header ul .here:hover {
   z-index: 999;
 }
 
-@media screen and (max-width: 600px) {
-  #en .pic img .pic img {
-    display: block;
-    position: absolute;
+@media screen and (max-width: 1000px) {
+  #en .pic img {
+    width: 32%;
     margin: 7% 0 0 63%;
-    padding: 0%;
-    width: 29%;
-    z-index: 999;
   }
 }
 
-@media screen and (max-width: 600px) and (max-width: 600px) {
-  #en .pic img .pic img {
+@media screen and (max-width: 1000px) and (max-width: 600px) {
+  #en .pic img {
     display: none;
   }
 }
@@ -432,7 +548,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .omake {
+    margin: 260% 0 0 18%;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .omake {
     margin: 320% 0 0 18%;
     width: 65%;
@@ -456,7 +579,14 @@ header ul .here:hover {
   padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .staff {
+    margin: 330% 0 0 18%;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .staff {
     margin: 410% 0 0 18%;
     width: 65%;

@@ -4,7 +4,13 @@ body {
   background-image: url(../Image/paper.jpg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  body {
+    background-repeat: repeat-y;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   body {
     background-repeat: repeat-y;
   }
@@ -24,7 +30,15 @@ header ul {
   z-index: 100;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul {
+    display: block;
+    margin: 38% 0 0 2.5%;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul {
     display: block;
     margin: 35% 0 0 0;
@@ -56,7 +70,18 @@ header ul li {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  header ul li {
+    width: 120%;
+    font-size: 1.8em;
+    display: block;
+    padding: 10% 5%;
+    margin: 0% 0 0 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   header ul li {
     width: 120%;
     font-size: 1.8em;
@@ -93,7 +118,14 @@ header ul .here:hover {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .icon img {
+    margin: 2% 0 0 7%;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .icon img {
     margin: 2% 0 0 7%;
     width: 16%;
@@ -110,7 +142,14 @@ header ul .here:hover {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .lg p {
+    margin: 31% 0 0 8%;
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   .lg p {
     margin: 26% 0 0 5%;
     width: 16%;
@@ -133,8 +172,16 @@ header ul .here:hover {
   height: 130%;
   text-align: center;
   opacity: 1;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+  #main {
+    margin: 12% 0 0 30%;
+    width: 55%;
+    height: 140%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -157,7 +204,13 @@ header ul .here:hover {
   font-family: "Yuji Syuku", serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .box1 {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .box1 {
     margin-top: 10%;
   }
@@ -168,7 +221,13 @@ header ul .here:hover {
   color: #d40e99;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .box1 h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .box1 h2 {
     font-size: 1.3em;
   }
@@ -211,7 +270,16 @@ header ul .here:hover {
           box-shadow: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .box2 #name,
+  #main .box2 #email {
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-width: 0.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .box2 #name,
   #main .box2 #email {
     width: 80%;
@@ -232,7 +300,15 @@ header ul .here:hover {
           box-shadow: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .box2 #message {
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-width: 0.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .box2 #message {
     width: 80%;
     margin: 3% 0 0 10%;
@@ -252,7 +328,15 @@ header ul .here:hover {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #main .box2 #submit {
+    margin: 10% 0 0 34%;
+    padding: 2%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #main .box2 #submit {
     margin: 10% 0 0 34%;
     padding: 2%;
@@ -276,11 +360,19 @@ header ul .here:hover {
   height: 130%;
   text-align: center;
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en {
+    margin: 12% 0 0 30%;
+    width: 55%;
+    height: 160%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en {
     margin: 12% 0 0 30%;
     width: 55%;
@@ -306,12 +398,24 @@ header ul .here:hover {
   }
 }
 
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  #en .box1 {
+    margin-top: 10%;
+  }
+}
+
 #en .box1 h2 {
   font-size: 1.5em;
   color: #d40e99;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .box1 h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .box1 h2 {
     font-size: 1.3em;
   }
@@ -354,7 +458,16 @@ header ul .here:hover {
           box-shadow: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .box2 #name,
+  #en .box2 #email {
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-width: 0.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .box2 #name,
   #en .box2 #email {
     width: 80%;
@@ -375,7 +488,15 @@ header ul .here:hover {
           box-shadow: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .box2 #message {
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-width: 0.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .box2 #message {
     width: 80%;
     margin: 3% 0 0 10%;
@@ -395,7 +516,15 @@ header ul .here:hover {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  #en .box2 #submit {
+    margin: 10% 0 0 34%;
+    padding: 2%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 600px) {
   #en .box2 #submit {
     margin: 10% 0 0 34%;
     padding: 2%;

@@ -233,7 +233,7 @@ header {
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
-        font-size: 1em;
+        font-size: 1.3em;
         @include mq("md") {
           font-size: 1em;
           @include mq("sm") {
@@ -265,7 +265,7 @@ header {
     transition: 0.5s;
     width: 70%;
     margin: 15% 3% 0 10%;
-    padding: 3% 5%;
+    padding: 3% 4% 1%;
     @include mq("md") {
       display: block;
       opacity: 1;
@@ -282,6 +282,7 @@ header {
     }
     img {
       width: 33%;
+      height: 36%;
       @include mq("md") {
         width: 37%;
         height: 37%;
@@ -323,7 +324,7 @@ header {
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
-        font-size: 1em;
+        font-size: 1.2em;
         @include mq("md") {
           font-size: 1em;
           @include mq("sm") {
@@ -333,7 +334,8 @@ header {
       }
       img {
         width: 20%;
-        margin: 15% 0 0 30%;
+        height: 10%;
+        margin: 5% 0 0 30%;
         padding: 0%;
         cursor: pointer;
         @include mq("md") {
@@ -355,7 +357,7 @@ header {
     transition: 0.5s;
     width: 70%;
     margin: 15% 3% 0 10%;
-    padding: 3% 5%;
+    padding: 3% 5% 1%;
     @include mq("md") {
       display: block;
       opacity: 1;
@@ -372,6 +374,7 @@ header {
     }
     img {
       width: 30%;
+      height: 33%;
       @include mq("md") {
         width: 35%;
         height: 35%;
@@ -413,7 +416,7 @@ header {
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
-        font-size: 1em;
+        font-size: 1.3em;
         @include mq("md") {
           font-size: 1em;
           @include mq("sm") {
@@ -423,7 +426,8 @@ header {
       }
       img {
         width: 20%;
-        margin: 15% 0 0 30%;
+        height: 10%;
+        margin: 5% 0 0 30%;
         padding: 0%;
         cursor: pointer;
         @include mq("md") {
@@ -445,7 +449,7 @@ header {
     transition: 0.5s;
     width: 70%;
     margin: 15% 3% 0 10%;
-    padding: 3% 5%;
+    padding: 3% 5% 1%;
     @include mq("md") {
       display: block;
       opacity: 1;
@@ -462,6 +466,7 @@ header {
     }
     img {
       width: 25%;
+      height: 28%;
       @include mq("md") {
         width: 35%;
         height: 35%;
@@ -503,7 +508,7 @@ header {
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
-        font-size: 1em;
+        font-size: 1.3em;
         @include mq("md") {
           font-size: 1em;
           @include mq("sm") {
@@ -513,7 +518,8 @@ header {
       }
       img {
         width: 20%;
-        margin: 15% 0 0 30%;
+        height: 10%;
+        margin: 5% 0 0 30%;
         padding: 0%;
         cursor: pointer;
         @include mq("md") {
@@ -552,6 +558,7 @@ header {
     }
     img {
       width: 33%;
+      height: 36%;
       @include mq("md") {
         width: 40%;
         height: 40%;
@@ -593,7 +600,7 @@ header {
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
-        font-size: 1em;
+        font-size: 1.3em;
         @include mq("md") {
           font-size: 1em;
           @include mq("sm") {
@@ -603,7 +610,8 @@ header {
       }
       img {
         width: 20%;
-        margin: 15% 0 0 30%;
+        height: 10%;
+        margin: 5% 0 0 30%;
         padding: 0%;
         cursor: pointer;
         @include mq("md") {
@@ -683,7 +691,7 @@ header {
       p {
         color: white;
         font-family: "Yuji Syuku", serif;
-        font-size: 1em;
+        font-size: 1.3em;
         @include mq("md") {
           font-size: 1em;
           @include mq("sm") {

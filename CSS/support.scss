@@ -1,8 +1,7 @@
 $breakpoints: (
   "sm": "screen and (max-width: 600px)",
-  "md": "screen and (max-width: 800px)",
-  "lg": "screen and (max-width: 1000px)",
-  "xl": "screen and (max-width: 1300px)",
+  "md": "screen and (max-width: 1000px)",
+  "lg": "screen and (max-width: 1500px)",
 ) !default;
 
 @mixin mq($breakpoint) {
@@ -14,8 +13,12 @@ body {
   margin: 0%;
   padding: 0%;
   background-image: url(../Image/paper.jpg);
-  @include mq("sm") {
+  @include mq("md") {
     background-repeat: repeat-y;
+
+    @include mq("sm") {
+      background-repeat: repeat-y;
+    }
   }
 }
 a {
@@ -28,10 +31,15 @@ header {
     position: absolute;
     display: flex;
     z-index: 100;
-    @include mq("sm") {
+    @include mq("md") {
       display: block;
-      margin: 35% 0 0 0;
+      margin: 38% 0 0 2.5%;
       position: fixed;
+      @include mq("sm") {
+        display: block;
+        margin: 35% 0 0 0;
+        position: fixed;
+      }
     }
     a {
       text-decoration: none;
@@ -50,13 +58,21 @@ header {
       font-family: "Gentium Book Basic", serif;
       font-size: 2em;
       transition: 0.3s;
-      @include mq("sm") {
+      @include mq("md") {
         width: 120%;
         font-size: 1.8em;
         display: block;
         padding: 10% 5%;
         margin: 0% 0 0 5%;
         text-align: center;
+        @include mq("sm") {
+          width: 120%;
+          font-size: 1.8em;
+          display: block;
+          padding: 10% 5%;
+          margin: 0% 0 0 5%;
+          text-align: center;
+        }
       }
       &:hover {
         background-color: rgb(0, 132, 255);
@@ -82,9 +98,13 @@ header {
     margin: 1.5% 0 0 4%;
     padding: 0%;
     float: left;
-    @include mq("sm") {
+    @include mq("md") {
       margin: 2% 0 0 7%;
-      width: 16%;
+      width: 20%;
+      @include mq("sm") {
+        margin: 2% 0 0 7%;
+        width: 16%;
+      }
     }
   }
 }
@@ -98,9 +118,13 @@ header {
     margin: 19% 0 0 5%;
     padding: 0%;
     color: white;
-    @include mq("sm") {
-      margin: 26% 0 0 5%;
+    @include mq("md") {
+      margin: 31% 0 0 8%;
       width: 16%;
+      @include mq("sm") {
+        margin: 26% 0 0 5%;
+        width: 16%;
+      }
     }
     span {
       &:hover {
@@ -122,7 +146,12 @@ header {
   height: 130%;
   text-align: center;
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
+  @include mq("md") {
+    margin: 12% 0 0 30%;
+    width: 55%;
+    height: 140%;
+  }
   @include mq("sm") {
     margin: 12% 0 0 30%;
     width: 55%;
@@ -137,14 +166,20 @@ header {
     margin: 0%;
     padding: 0%;
     font-family: "Yuji Syuku", serif;
-    @include mq("sm") {
+    @include mq("md") {
       margin-top: 10%;
+      @include mq("sm") {
+        margin-top: 10%;
+      }
     }
     h2 {
       font-size: 1.5em;
       color: rgb(212, 14, 153);
-      @include mq("sm") {
-        font-size: 1.3em;
+      @include mq("md") {
+        font-size: 1.6em;
+        @include mq("sm") {
+          font-size: 1.3em;
+        }
       }
     }
     p {
@@ -174,10 +209,15 @@ header {
       border-color: rgb(202, 74, 164);
       box-sizing: border-box;
       box-shadow: 1em;
-      @include mq("sm") {
+      @include mq("md") {
         width: 80%;
         margin: 3% 0 0 10%;
         border-width: 0.2em;
+        @include mq("sm") {
+          width: 80%;
+          margin: 3% 0 0 10%;
+          border-width: 0.2em;
+        }
       }
     }
     #message {
@@ -188,10 +228,15 @@ header {
       border-color: rgb(202, 74, 164);
       box-sizing: border-box;
       box-shadow: 1em;
-      @include mq("sm") {
+      @include mq("md") {
         width: 80%;
         margin: 3% 0 0 10%;
         border-width: 0.2em;
+        @include mq("sm") {
+          width: 80%;
+          margin: 3% 0 0 10%;
+          border-width: 0.2em;
+        }
       }
     }
     #submit {
@@ -203,10 +248,15 @@ header {
       box-sizing: border-box;
       cursor: pointer;
       color: white;
-      @include mq("sm") {
+      @include mq("md") {
         margin: 10% 0 0 34%;
         padding: 2%;
         width: 30%;
+        @include mq("sm") {
+          margin: 10% 0 0 34%;
+          padding: 2%;
+          width: 30%;
+        }
       }
       &:hover {
         color: black;
@@ -226,11 +276,16 @@ header {
   height: 130%;
   text-align: center;
   opacity: 0;
-  transition: .3s;
-  @include mq("sm") {
+  transition: 0.3s;
+  @include mq("md") {
     margin: 12% 0 0 30%;
     width: 55%;
     height: 160%;
+    @include mq("sm") {
+      margin: 12% 0 0 30%;
+      width: 55%;
+      height: 160%;
+    }
   }
   a {
     text-decoration: none;
@@ -243,12 +298,18 @@ header {
     font-family: "Yuji Syuku", serif;
     @include mq("sm") {
       margin-top: 10%;
+      @include mq("sm") {
+        margin-top: 10%;
+      }
     }
     h2 {
       font-size: 1.5em;
       color: rgb(212, 14, 153);
-      @include mq("sm") {
-        font-size: 1.3em;
+      @include mq("md") {
+        font-size: 1.6em;
+        @include mq("sm") {
+          font-size: 1.3em;
+        }
       }
     }
     p {
@@ -278,10 +339,15 @@ header {
       border-color: rgb(202, 74, 164);
       box-sizing: border-box;
       box-shadow: 1em;
-      @include mq("sm") {
+      @include mq("md") {
         width: 80%;
         margin: 3% 0 0 10%;
         border-width: 0.2em;
+        @include mq("sm") {
+          width: 80%;
+          margin: 3% 0 0 10%;
+          border-width: 0.2em;
+        }
       }
     }
     #message {
@@ -292,10 +358,15 @@ header {
       border-color: rgb(202, 74, 164);
       box-sizing: border-box;
       box-shadow: 1em;
-      @include mq("sm") {
+      @include mq("md") {
         width: 80%;
         margin: 3% 0 0 10%;
         border-width: 0.2em;
+        @include mq("sm") {
+          width: 80%;
+          margin: 3% 0 0 10%;
+          border-width: 0.2em;
+        }
       }
     }
     #submit {
@@ -307,10 +378,15 @@ header {
       box-sizing: border-box;
       cursor: pointer;
       color: white;
-      @include mq("sm") {
+      @include mq("md") {
         margin: 10% 0 0 34%;
         padding: 2%;
         width: 30%;
+        @include mq("sm") {
+          margin: 10% 0 0 34%;
+          padding: 2%;
+          width: 30%;
+        }
       }
       &:hover {
         color: black;
